@@ -1,0 +1,36 @@
+HTTP/2 200 
+date: Mon, 10 Feb 2020 09:59:53 GMT
+content-type: text/html; charset=UTF-8
+set-cookie: __cfduid=dc23acf40b1a902abaadaf064460b8ded1581328792; expires=Wed, 11-Mar-20 09:59:52 GMT; path=/; domain=.booleanworld.com; HttpOnly; SameSite=Lax; Secure
+cache-control: max-age=0, must-revalidate, no-cache, no-store
+display: pub_site_noads_sol
+expires: Sun, 09 Feb 2020 09:59:53 GMT
+link: <https://www.booleanworld.com/wp-json/>; rel="https://api.w.org/"
+pagespeed: off
+response: 200
+set-cookie: ezoadgid_95829=-1; Path=/; Domain=booleanworld.com; Expires=Mon, 10 Feb 2020 10:29:53 UTC
+set-cookie: ezoref_95829=; Path=/; Domain=booleanworld.com; Expires=Mon, 10 Feb 2020 11:59:53 UTC
+set-cookie: ezoab_95829=mod71-c; Path=/; Domain=booleanworld.com; Expires=Mon, 10 Feb 2020 11:59:53 UTC
+set-cookie: active_template::95829=pub_site.1581328793; Path=/; Domain=booleanworld.com; Expires=Wed, 12 Feb 2020 09:59:53 UTC
+set-cookie: ezopvc_95829=1; Path=/; Domain=booleanworld.com; Expires=Mon, 10 Feb 2020 10:29:53 UTC
+set-cookie: ezepvv=0; Path=/; Domain=booleanworld.com; Expires=Tue, 11 Feb 2020 09:59:53 UTC
+set-cookie: lp_95829=https://www.booleanworld.com/; Path=/; Domain=booleanworld.com; Expires=Mon, 10 Feb 2020 11:59:53 UTC
+set-cookie: ezovid_95829=1929774208; Path=/; Domain=booleanworld.com; Expires=Mon, 10 Feb 2020 10:29:53 UTC
+set-cookie: ezovuuidtime_95829=1581328793; Path=/; Domain=booleanworld.com; Expires=Wed, 12 Feb 2020 09:59:53 UTC
+set-cookie: ezovuuid_95829=9f66b4d6-c5fd-4d24-6b2c-5e3b9122b111; Path=/; Domain=booleanworld.com; Expires=Mon, 10 Feb 2020 10:29:53 UTC
+set-cookie: ezCMPCCS=true; Path=/; Domain=booleanworld.com; Expires=Wed, 10 Feb 2021 09:59:53 GMT
+vary: Accept-Encoding
+vary: Accept-Encoding,Cookie,X-APP-JSON
+x-ezoic-cdn: Miss
+x-frame-options: sameorigin
+x-middleton-display: pub_site_noads_sol
+x-middleton-response: 200
+x-sol: pub_site
+x-xss-protection: 1; mode=block
+cf-cache-status: DYNAMIC
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+server: cloudflare
+cf-ray: 562d3b9b3cd8bdaa-AMS
+

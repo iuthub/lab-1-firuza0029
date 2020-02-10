@@ -1,0 +1,2000 @@
+16:25:56.609000 == Info:   Trying 31.13.72.36:80...
+16:25:56.625000 == Info: TCP_NODELAY set
+16:25:56.625000 == Info: Connected to www.facebook.com (31.13.72.36) port 80 (#0)
+16:25:56.625000 => Send header, 81 bytes (0x51)
+0000: GET /l HTTP/1.1
+0011: Host: www.facebook.com
+0029: User-Agent: curl/7.68.0
+0042: Accept: */*
+004f: 
+16:25:56.984000 == Info: Mark bundle as not supporting multiuse
+16:25:56.984000 <= Recv header, 20 bytes (0x14)
+0000: HTTP/1.1 302 Found
+16:25:57.000000 <= Recv header, 38 bytes (0x26)
+0000: Location: https://www.facebook.com/l
+16:25:57.000000 <= Recv header, 42 bytes (0x2a)
+0000: Content-Type: text/html; charset="utf-8"
+16:25:57.000000 <= Recv header, 102 bytes (0x66)
+0000: X-FB-Debug: nvIXvRzdN7l1nfeSOBg6RxQMMXO1LElpP4q3E9IofCqZDvxxiKNi
+0040: 0Gw8Ak9kugLItp+e9KfJ3pbQJkXSpR56bg==
+16:25:57.000000 <= Recv header, 32 bytes (0x20)
+0000: Alt-Svc: h3-24=":443"; ma=3600
+16:25:57.000000 <= Recv header, 37 bytes (0x25)
+0000: Date: Wed, 05 Feb 2020 11:25:57 GMT
+16:25:57.000000 <= Recv header, 19 bytes (0x13)
+0000: Content-Length: 0
+16:25:57.000000 <= Recv header, 24 bytes (0x18)
+0000: Connection: Keep-Alive
+16:25:57.000000 <= Recv header, 2 bytes (0x2)
+0000: 
+16:25:57.000000 == Info: Connection #0 to host www.facebook.com left intact
+16:25:57.000000 == Info: Issue another request to this URL: 'https://www.facebook.com/l'
+16:25:57.000000 == Info:   Trying 31.13.72.36:443...
+16:25:57.000000 == Info: TCP_NODELAY set
+16:25:57.015000 == Info: Connected to www.facebook.com (31.13.72.36) port 443 (#1)
+16:25:57.015000 == Info: ALPN, offering h2
+16:25:57.015000 == Info: ALPN, offering http/1.1
+16:25:57.046000 == Info: successfully set certificate verify locations:
+16:25:57.046000 == Info:   CAfile: C:\Users\User\curl-7.68.0-win64-mingw\bin\curl-ca-bundle.crt
+  CApath: none
+16:25:57.046000 => Send SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.046000 == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+16:25:57.046000 => Send SSL data, 512 bytes (0x200)
+0000: .......l4...(w.t.....W.R..X..n...;.'.. ../...u.WA"..e.irQ.eJ.'k.
+0040: 5..k..p.>.......,.0.........+./...$.(.k.#.'.g.....9.....3.....=.
+0080: <.5./.....u.........www.facebook.com........................3t..
+00c0: .......h2.http/1.1.........1.....0..............................
+0100: ...................+............-.....3.&.$... =....._.H...3.?..
+0140: e.,..uGy.-..r.N.................................................
+0180: ................................................................
+01c0: ................................................................
+16:25:57.312000 <= Recv SSL data, 5 bytes (0x5)
+0000: ....z
+16:25:57.312000 == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+16:25:57.312000 <= Recv SSL data, 122 bytes (0x7a)
+0000: ...v...5...)..a6y................... ../...u.WA"..e.irQ.eJ.'k.
+0040: 5..k..p......+.....3.$... ..{.y......MNy.}....Z8.x"+....6W
+16:25:57.312000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.312000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.312000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 == Info: TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+16:25:57.312000 <= Recv SSL data, 15 bytes (0xf)
+0000: .............h2
+16:25:57.312000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.312000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.312000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 == Info: TLSv1.3 (IN), TLS handshake, Certificate (11):
+16:25:57.312000 <= Recv SSL data, 2819 bytes (0xb03)
+0000: ..........<0..80.. .........5.ec..2....b#.0...*.H........0p1.0..
+0040: .U....US1.0...U....DigiCert Inc1.0...U....www.digicert.com1/0-..
+0080: U...&DigiCert SHA2 High Assurance Server CA0...200116000000Z..20
+00c0: 0415120000Z0i1.0...U....US1.0...U....California1.0...U....Menlo 
+0100: Park1.0...U....Facebook, Inc.1.0...U....*.facebook.com0Y0...*.H.
+0140: =....*.H.=....B....SU.gF.r..^(...N....s<....Vd.Q..p..P..b...:f..
+0180: ..Iu...j_.....}CT....0...0...U.#..0...Qh.....u<..edb...Yr;0...U.
+01c0: .......L...[;.L5......mU.0....U.....0....*.facebook.com..*.faceb
+0200: ook.net..*.fb.com..*.fbcdn.net..*.fbsbx.com..*.messenger.com..fa
+0240: cebook.com..fb.com..messenger.com..*.m.facebook.com..*.xx.fbcdn.
+0280: net..*.xy.fbcdn.net..*.xz.fbcdn.net0...U...........0...U.%..0...
+02c0: +.........+.......0u..U...n0l04.2.0..http://crl3.digicert.com/sh
+0300: a2-ha-server-g6.crl04.2.0..http://crl4.digicert.com/sha2-ha-serv
+0340: er-g6.crl0L..U. .E0C07..`.H...l..0*0(..+.........https://www.dig
+0380: icert.com/CPS0...g.....0....+........w0u0$..+.....0...http://ocs
+03c0: p.digicert.com0M..+.....0..Ahttp://cacerts.digicert.com/DigiCert
+0400: SHA2HighAssuranceServerCA.crt0...U.......0.0.....+.....y........
+0440: ....u.......q...#...{G8W...R....d6.......o.x.......F0D. `kM...r6
+0480: L.H@..w..X.C.8...'...+#c. ...G...z......:....9....J...n....w.^.s
+04c0: ..V...6H}.I.2z.........u..qEX...o.x.......H0F.!..i... ./.(.P...4
+0500: .?=.B..#...g.,...!...MNn........5..<....|k.JSF.t.F#0...*.H......
+0540: .......ww|9...X$-k....u...a........G.H.o..0nstA....cK...PR\:[.N.
+0580: .:....d.....M.s."..H...p..F.V.1.tsq..Z<\.kW..ds..+..di1Vy.;^=..
+05c0: .A...6.4..,..F......bC..z._.,..M.7...8(|b.'..Dd...._..\L.$=.....
+0600: ......h..Z...A.$.....Y.s2.!......8..w...Y...VH...{.to.....1....M
+0640: Cy.iL/o.....0...0...............\..m.+B.]..0...*.H........0l1.0.
+0680: ..U....US1.0...U....DigiCert Inc1.0...U....www.digicert.com1+0).
+06c0: .U..."DigiCert High Assurance EV Root CA0...131022120000Z..28102
+0700: 2120000Z0p1.0...U....US1.0...U....DigiCert Inc1.0...U....www.dig
+0740: icert.com1/0-..U...&DigiCert SHA2 High Assurance Server CA0.."0.
+0780: ..*.H.............0........../.$..m._...d..}"&e..B@.....v.>.0U..
+07c0: .O..Z..UV...*.....@...;r............C:.......@....M._W..Ph......
+0800: ..........-..........^DX*7..5...'2Z......Q.'..;B3..(..(...+#.x.{
+0840: .^q.J>........#.M.....u.......D5eS%9....c...th.7..RH.9Z...]... 
+0880: .!..&o.J!A..m..H/....h.S/^.........I0..E0...U.......0.......0...
+08c0: U...........0...U.%..0...+.........+.......04..+........(0&0$..+
+0900: .....0...http://ocsp.digicert.com0K..U...D0B0@.>.<.:http://crl4.
+0940: digicert.com/DigiCertHighAssuranceEVRootCA.crl0=..U. .60402..U. 
+0980: .0*0(..+.........https://www.digicert.com/CPS0...U......Qh.....u
+09c0: <..edb...Yr;0...U.#..0....>.i...G...&....cd+.0...*.H............
+0a00: .......m.\..h.J...Q/.kD...c..nl.....q.[.4N..y.).-.j.. .y...G....
+0a40: .Yq}...k.YX=..1%\.8.......[.1N.x.....I..'..r.>..A...6...nGI^.H|
+0a80: ....I..&B@.....d.WT.....^k......r.V....0..0..N.W..$...+..u..-..
+0ac0: }y'............ (AYC(......{;w.@b..AE....>..3.g.a.r..i...W@.p...
+0b00: ...
+16:25:57.312000 == Info: TLSv1.3 (IN), TLS handshake, CERT verify (15):
+16:25:57.312000 <= Recv SSL data, 80 bytes (0x50)
+0000: ...L...H0F.!...~....&..z.;...B...Ri.*.P.n.&.S.!.....c....$.cH.Z.
+0040: "...tn.N./fvXh.W
+16:25:57.312000 == Info: TLSv1.3 (IN), TLS handshake, Finished (20):
+16:25:57.312000 <= Recv SSL data, 36 bytes (0x24)
+0000: ... &................s8..S..$......T
+16:25:57.312000 => Send SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.312000 == Info: TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+16:25:57.312000 => Send SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 => Send SSL data, 5 bytes (0x5)
+0000: ....5
+16:25:57.312000 => Send SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 == Info: TLSv1.3 (OUT), TLS handshake, Finished (20):
+16:25:57.312000 => Send SSL data, 36 bytes (0x24)
+0000: ... .m..#)......m).::..A.b.^.Xv&$j+:
+16:25:57.312000 == Info: SSL connection using TLSv1.3 / TLS_CHACHA20_POLY1305_SHA256
+16:25:57.312000 == Info: ALPN, server accepted to use h2
+16:25:57.312000 == Info: Server certificate:
+16:25:57.312000 == Info:  subject: C=US; ST=California; L=Menlo Park; O=Facebook, Inc.; CN=*.facebook.com
+16:25:57.312000 == Info:  start date: Jan 16 00:00:00 2020 GMT
+16:25:57.312000 == Info:  expire date: Apr 15 12:00:00 2020 GMT
+16:25:57.312000 == Info:  subjectAltName: host "www.facebook.com" matched cert's "*.facebook.com"
+16:25:57.312000 == Info:  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+16:25:57.312000 == Info:  SSL certificate verify ok.
+16:25:57.312000 == Info: Using HTTP2, server supports multi-use
+16:25:57.312000 == Info: Connection state changed (HTTP/2 confirmed)
+16:25:57.312000 == Info: Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+16:25:57.312000 => Send SSL data, 5 bytes (0x5)
+0000: ....)
+16:25:57.312000 => Send SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 => Send SSL data, 5 bytes (0x5)
+0000: ....,
+16:25:57.312000 => Send SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 => Send SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.312000 => Send SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 == Info: Using Stream ID: 1 (easy handle 0x16c5f50a450)
+16:25:57.312000 => Send SSL data, 5 bytes (0x5)
+0000: ....=
+16:25:57.312000 => Send SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.312000 => Send header, 79 bytes (0x4f)
+0000: GET /l HTTP/2
+000f: Host: www.facebook.com
+0027: user-agent: curl/7.68.0
+0040: accept: */*
+004d: 
+16:25:57.406000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.406000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.406000 == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+16:25:57.406000 <= Recv SSL data, 149 bytes (0x95)
+0000: ................. ...........!.*.....b.q...6........y...z..32hf
+0040: .D9..."..H..6..G3........MA.e..B...XvC..?(#......Y...+u^.......
+0080: ]..(.s(....s;...0)...
+16:25:57.406000 <= Recv SSL data, 5 bytes (0x5)
+0000: ....E
+16:25:57.406000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.406000 == Info: Connection state changed (MAX_CONCURRENT_STREAMS == 100)!
+16:25:57.406000 => Send SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.406000 => Send SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.406000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.406000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.406000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.406000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.500000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.500000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.500000 <= Recv header, 13 bytes (0xd)
+0000: HTTP/2 404 
+16:25:57.500000 <= Recv header, 173 bytes (0xad)
+0000: set-cookie: fr=12DFTloGVZWydnSfE..BeOqZF.FX.AAA.0.0.BeOqZF.AWXXX
+0040: HjX; expires=Tue, 05-May-2020 11:25:56 GMT; Max-Age=7775999; pat
+0080: h=/; domain=.facebook.com; secure; httponly
+16:25:57.500000 <= Recv header, 61 bytes (0x3d)
+0000: cache-control: private, no-cache, no-store, must-revalidate
+16:25:57.500000 <= Recv header, 18 bytes (0x12)
+0000: pragma: no-cache
+16:25:57.500000 <= Recv header, 54 bytes (0x36)
+0000: strict-transport-security: max-age=15552000; preload
+16:25:57.500000 <= Recv header, 23 bytes (0x17)
+0000: vary: Accept-Encoding
+16:25:57.500000 <= Recv header, 33 bytes (0x21)
+0000: x-content-type-options: nosniff
+16:25:57.500000 <= Recv header, 23 bytes (0x17)
+0000: x-frame-options: DENY
+16:25:57.500000 <= Recv header, 21 bytes (0x15)
+0000: x-xss-protection: 0
+16:25:57.500000 <= Recv header, 40 bytes (0x28)
+0000: expires: Sat, 01 Jan 2000 00:00:00 GMT
+16:25:57.515000 <= Recv header, 42 bytes (0x2a)
+0000: content-type: text/html; charset="utf-8"
+16:25:57.515000 <= Recv header, 102 bytes (0x66)
+0000: x-fb-debug: qVV6mhU3Bh2CGp2v2gQvaKo66ApseOkxXDhSV8EaFGRaB+lSwtx5
+0040: t1i1gL9OEro5fr1FjGEXbtqURtroCHkj+Q==
+16:25:57.515000 <= Recv header, 37 bytes (0x25)
+0000: date: Wed, 05 Feb 2020 11:25:57 GMT
+16:25:57.515000 <= Recv header, 32 bytes (0x20)
+0000: alt-svc: h3-24=":443"; ma=3600
+16:25:57.515000 <= Recv header, 37 bytes (0x25)
+0000: date: Wed, 05 Feb 2020 11:25:57 GMT
+16:25:57.515000 <= Recv header, 2 bytes (0x2)
+0000: 
+16:25:57.515000 <= Recv data, 1041 bytes (0x411)
+0000: <!DOCTYPE html>.<html lang="ru" id="facebook" class="no_js">.<he
+0040: ad><meta charset="utf-8" /><meta name="referrer" content="defaul
+0080: t" id="meta_referrer" /><script>window._cstart=+new Date();</scr
+00c0: ipt><script>function envFlush(a){function b(b){for(var c in a)b[
+0100: c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window
+0140: .Env=window.Env||{},b(window.Env))}envFlush({"ajaxpipe_token":"A
+0180: XjgEASV5aaRWqHH","timeslice_heartbeat_config":{"pollIntervalMs":
+01c0: 33,"idleGapThresholdMs":60,"ignoredTimesliceNames":{"requestAnim
+0200: ationFrame":true,"Event listenHandler mousemove":true,"Event lis
+0240: tenHandler mouseover":true,"Event listenHandler mouseout":true,"
+0280: Event listenHandler scroll":true},"isHeartbeatEnabled":true,"isA
+02c0: rtilleryOn":false},"shouldLogCounters":true,"timeslice_categorie
+0300: s":{"react_render":true,"reflow":true},"sample_continuation_stac
+0340: ktraces":true,"dom_mutation_flag":true,"stack_trace_limit":30,"d
+0380: eferred_stack_trace_rate":1000,"timesliceBufferSize":5000,"show_
+03c0: invariant_decoder":false,"compat_iframe_token":"AQ6FWlptngVNygOd
+0400: ","isCQuick":fals
+16:25:57.515000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.515000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.515000 <= Recv data, 487 bytes (0x1e7)
+0000: e});</script><style></style><script>__DEV__=0;CavalryLogger=wind
+0040: ow.CavalryLogger||function(a){this.lid=a,this.transition=!1,this
+0080: .metric_collected=!1,this.is_detailed_profiler=!1,this.instrumen
+00c0: tation_started=!1,this.pagelet_metrics={},this.events={},this.on
+0100: going_watch={},this.values={t_cstart:window._cstart},this.piggy_
+0140: values={},this.bootloader_metrics={},this.resource_to_pagelet_ma
+0180: pping={},this.initializeInstrumentation&&this.initializeInstrume
+01c0: ntation()},CavalryLogger.prototype.setI
+16:25:57.515000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.515000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.515000 <= Recv data, 1491 bytes (0x5d3)
+0000: sDetailedProfiler=function(a){this.is_detailed_profiler=a;return
+0040:  this},CavalryLogger.prototype.setTTIEvent=function(a){this.tti_
+0080: event=a;return this},CavalryLogger.prototype.setValue=function(a
+00c0: ,b,c,d){d=d?this.piggy_values:this.values;(typeof d[a]==="undefi
+0100: ned"||c)&&(d[a]=b);return this},CavalryLogger.prototype.getLastT
+0140: tiValue=function(){return this.lastTtiValue},CavalryLogger.proto
+0180: type.setTimeStamp=CavalryLogger.prototype.setTimeStamp||function
+01c0: (a,b,c,d){this.mark(a);var e=this.values.t_cstart||this.values.t
+0200: _start;e=d?e+d:CavalryLogger.now();this.setValue(a,e,b,c);this.t
+0240: ti_event&&a==this.tti_event&&(this.lastTtiValue=e,this.setTimeSt
+0280: amp("t_tti",b));return this},CavalryLogger.prototype.mark=typeof
+02c0:  console==="object"&&console.timeStamp?function(a){console.timeS
+0300: tamp(a)}:function(){},CavalryLogger.prototype.addPiggyback=funct
+0340: ion(a,b){this.piggy_values[a]=b;return this},CavalryLogger.insta
+0380: nces={},CavalryLogger.id=0,CavalryLogger.disableArtilleryOnUntil
+03c0: OffLogging=!1,CavalryLogger.getInstance=function(a){typeof a==="
+0400: undefined"&&(a=CavalryLogger.id);CavalryLogger.instances[a]||(Ca
+0440: valryLogger.instances[a]=new CavalryLogger(a));return CavalryLog
+0480: ger.instances[a]},CavalryLogger.setPageID=function(a){if(Cavalry
+04c0: Logger.id===0){var b=CavalryLogger.getInstance();CavalryLogger.i
+0500: nstances[a]=b;CavalryLogger.instances[a].lid=a;delete CavalryLog
+0540: ger.instances[0]}CavalryLogger.id=a},CavalryLogger.now=function(
+0580: ){return window.performance&&performance.timing&&performance.tim
+05c0: ing.navigationStart
+16:25:57.531000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.531000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.531000 <= Recv data, 1500 bytes (0x5dc)
+0000: &&performance.now?performance.now()+performance.timing.navigatio
+0040: nStart:new Date().getTime()},CavalryLogger.prototype.measureReso
+0080: urces=function(){},CavalryLogger.prototype.profileEarlyResources
+00c0: =function(){},CavalryLogger.getBootloaderMetricsFromAllLoggers=f
+0100: unction(){},CavalryLogger.start_js=function(){},CavalryLogger.do
+0140: ne_js=function(){};CavalryLogger.getInstance().setTTIEvent("t_do
+0180: mcontent");CavalryLogger.prototype.measureResources=function(a,b
+01c0: ){if(!this.log_resources)return;var c="bootload/"+a.name;if(this
+0200: .bootloader_metrics[c]!==void 0||this.ongoing_watch[c]!==void 0)
+0240: return;var d=CavalryLogger.now();this.ongoing_watch[c]=d;"start_
+0280: "+c in this.bootloader_metrics||(this.bootloader_metrics["start_
+02c0: "+c]=d);b&&!("tag_"+c in this.bootloader_metrics)&&(this.bootloa
+0300: der_metrics["tag_"+c]=b);if(a.type==="js"){c="js_exec/"+a.name;t
+0340: his.ongoing_watch[c]=d}},CavalryLogger.prototype.stopWatch=funct
+0380: ion(a){if(this.ongoing_watch[a]){var b=CavalryLogger.now(),c=b-t
+03c0: his.ongoing_watch[a];this.bootloader_metrics[a]=c;var d=this.pig
+0400: gy_values;a.indexOf("bootload")===0&&(d.t_resource_download||(d.
+0440: t_resource_download=0),d.resources_downloaded||(d.resources_down
+0480: loaded=0),d.t_resource_download+=c,d.resources_downloaded+=1,d["
+04c0: tag_"+a]=="_EF_"&&(d.t_pagelet_cssload_early_resources=b));delet
+0500: e this.ongoing_watch[a]}return this},CavalryLogger.getBootloader
+0540: MetricsFromAllLoggers=function(){var a={};Object.values(window.C
+0580: avalryLogger.instances).forEach(function(b){b.bootloader_metrics
+05c0: &&Object.assign(a,b.bootload
+16:25:57.531000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.531000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.531000 <= Recv data, 937 bytes (0x3a9)
+0000: er_metrics)});return a},CavalryLogger.start_js=function(a){for(v
+0040: ar b=0;b<a.length;++b)CavalryLogger.getInstance().stopWatch("js_
+0080: exec/"+a[b])},CavalryLogger.done_js=function(a){for(var b=0;b<a.
+00c0: length;++b)CavalryLogger.getInstance().stopWatch("bootload/"+a[b
+0100: ])},CavalryLogger.prototype.profileEarlyResources=function(a){fo
+0140: r(var b=0;b<a.length;b++)this.measureResources({name:a[b][0],typ
+0180: e:a[b][1]?"js":""},"_EF_")};CavalryLogger.getInstance().log_reso
+01c0: urces=true;CavalryLogger.getInstance().setIsDetailedProfiler(tru
+0200: e);window.CavalryLogger&&CavalryLogger.getInstance().setTimeStam
+0240: p("t_start");</script><noscript><meta http-equiv="refresh" conte
+0280: nt="0; URL=/l?_fb_noscript=1" /></noscript><title id="pageTitle"
+02c0: >................ .... .............. | Facebook</title><link re
+0300: l="search" type="application/opensearchdescription+xml" href="/o
+0340: sd.xml" title="Facebook" /><link rel="alternate" media="only scr
+0380: een and (max-width: 640px)" href="https:/
+16:25:57.531000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.531000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.531000 <= Recv data, 1491 bytes (0x5d3)
+0000: /www.facebook.com/l" /><link rel="alternate" media="handheld" hr
+0040: ef="https://www.facebook.com/l" /><meta name="robots" content="n
+0080: oodp,noydir" /><meta property="og:title" content="&#x414;&#x43b;
+00c0: &#x44f; &#x43f;&#x440;&#x43e;&#x441;&#x43c;&#x43e;&#x442;&#x440;
+0100: &#x430; &#x43d;&#x443;&#x436;&#x43d;&#x43e; &#x432;&#x43e;&#x439
+0140: ;&#x442;&#x438; &#x438;&#x43b;&#x438; &#x437;&#x430;&#x440;&#x43
+0180: 5;&#x433;&#x438;&#x441;&#x442;&#x440;&#x438;&#x440;&#x43e;&#x432
+01c0: ;&#x430;&#x442;&#x44c;&#x441;&#x44f;" /><meta property="og:descr
+0200: iption" content="&#x421;&#x43c;&#x43e;&#x442;&#x440;&#x438;&#x44
+0240: 2;&#x435; &#x43f;&#x443;&#x431;&#x43b;&#x438;&#x43a;&#x430;&#x44
+0280: 6;&#x438;&#x438;, &#x444;&#x43e;&#x442;&#x43e; &#x438; &#x434;&#
+02c0: x440;&#x443;&#x433;&#x438;&#x435; &#x43c;&#x430;&#x442;&#x435;&#
+0300: x440;&#x438;&#x430;&#x43b;&#x44b; &#x43d;&#x430; Facebook." /><l
+0340: ink rel="mask-icon" sizes="any" href="/icon.svg" color="#3b5998"
+0380:  /><link rel="shortcut icon" href="https://static.xx.fbcdn.net/r
+03c0: src.php/yz/r/KFyVIAWzntM.ico" /><link type="text/css" rel="style
+0400: sheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yi/l/0,cros
+0440: s/AlWUaIIuA7u.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="9DWD2
+0480: " />.<link type="text/css" rel="stylesheet" href="https://static
+04c0: .xx.fbcdn.net/rsrc.php/v3/yi/l/0,cross/s5qe5xz3Spp.css?_nc_x=Ij3
+0500: Wp8lg5Kz" data-bootloader-hash="6KFqn" />.<link type="text/css" 
+0540: rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y
+0580: i/l/0,cross/u1UK3VLcP3Y.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-h
+05c0: ash="cNDmN" />.<lin
+16:25:57.531000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.531000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.531000 <= Recv data, 1500 bytes (0x5dc)
+0000: k type="text/css" rel="stylesheet" href="https://static.xx.fbcdn
+0040: .net/rsrc.php/v3/yB/l/0,cross/HhL9ecbBGyp.css?_nc_x=Ij3Wp8lg5Kz"
+0080:  data-bootloader-hash="bN9rs" />.<link type="text/css" rel="styl
+00c0: esheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y9/l/0,cro
+0100: ss/Q-nDzPr_frH.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="1cUg
+0140: n" />.<link type="text/css" rel="stylesheet" href="https://stati
+0180: c.xx.fbcdn.net/rsrc.php/v3/yO/l/0,cross/hbNKBzL8TPc.css?_nc_x=Ij
+01c0: 3Wp8lg5Kz" data-bootloader-hash="D3CA7" />.<script src="https://
+0200: static.xx.fbcdn.net/rsrc.php/v3/yb/r/UTaS4RRhwLd.js?_nc_x=Ij3Wp8
+0240: lg5Kz" data-bootloader-hash="J598A"></script>.<script>requireLaz
+0280: y(["gkx"],function(gkx){gkx.add({"676837":{"result":false,"hash"
+02c0: :"AT6hINJ0j9rtjTxW"},"676940":{"result":false,"hash":"AT5ECDmFnR
+0300: mJaxxq"},"946894":{"result":false,"hash":"AT5eOIdklfFGn6lv"},"99
+0340: 6939":{"result":false,"hash":"AT4D_MnkI9T5Zh_c"},"996940":{"resu
+0380: lt":false,"hash":"AT5Yz_7zlbhxU1z8"},"1263340":{"result":false,"
+03c0: hash":"AT4HBzTD3dvuZ3x9"},"676920":{"result":false,"hash":"AT6Pd
+0400: -wi791bpwT5"},"676921":{"result":false,"hash":"AT7JisdKi3oqu3jI"
+0440: },"676922":{"result":false,"hash":"AT43X5Z2Y1qpa515"},"1073500":
+0480: {"result":false,"hash":"AT5WeBfKsrO99Xxb"},"1113247":{"result":f
+04c0: alse,"hash":"AT5hiaWm6DtCPP85"},"708253":{"result":false,"hash":
+0500: "AT4rBmD377UpDf2e"},"1167394":{"result":false,"hash":"AT6P8ARdRN
+0540: mVrVEX"}});});requireLazy(["qex"],function(qex){qex.add({"121126
+0580: 6":{"r":null}});});require("TimeSliceImpl").guard(function(){(re
+05c0: quire("ServerJSDefine")).han
+16:25:57.531000 <= Recv SSL data, 5 bytes (0x5)
+0000: ....Q
+16:25:57.531000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.531000 <= Recv data, 576 bytes (0x240)
+0000: dleDefines([["URLFragmentPreludeConfig",[],{"hashtagRedirect":tr
+0040: ue,"fragBlacklist":["nonce","access_token","oauth_token","xs","c
+0080: heckpoint_data","code"]},137],["BootloaderConfig",[],{"jsRetries
+00c0: ":null,"jsRetryAbortNum":2,"jsRetryAbortTime":5,"payloadEndpoint
+0100: URI":"https:\/\/www.facebook.com\/ajax\/bootloader-endpoint\/","
+0140: preloadBE":false,"assumeNotNonblocking":false,"trackUnpredictedB
+0180: EResources":true,"shouldCoalesceModuleRequestsMadeInSameTick":tr
+01c0: ue,"staggerJsDownloads":false,"preloader_num_preloads":0,"preloa
+0200: der_preload_after_dd":false,"preloader_num_loads":1,"preloader_e
+16:25:57.546000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.546000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.546000 <= Recv data, 1491 bytes (0x5d3)
+0000: nabled":false,"retryQueuedBootloads":false,"silentDups":false,"a
+0040: syncPreloadBoost":true},329],["CSSLoaderConfig",[],{"timeout":50
+0080: 00,"modulePrefix":"BLCSS:"},619],["CookieCoreConfig",[],{"a11y":
+00c0: {},"act":{},"c_user":{},"dpr":{"t":604800},"js_ver":{"t":604800}
+0100: ,"locale":{"t":604800},"m_pixel_ratio":{"t":604800},"noscript":{
+0140: },"pnl_data2":{"t":2},"presence":{},"sfau":{},"wd":{"t":604800},
+0180: "x-referer":{},"x-src":{"t":1}},2104],["CurrentCommunityInitialD
+01c0: ata",[],{},490],["CurrentEnvironment",[],{"facebookdotcom":true,
+0200: "messengerdotcom":false},827],["CurrentUserInitialData",[],{"USE
+0240: R_ID":"0","ACCOUNT_ID":"0","NAME":"","SHORT_NAME":null,"IS_MESSE
+0280: NGER_ONLY_USER":false,"IS_DEACTIVATED_ALLOWED_ON_MESSENGER":fals
+02c0: e,"APP_ID":"256281040558"},270],["DTSGInitialData",[],{},258],["
+0300: ISB",[],{},330],["LSD",[],{"token":"AVq5LDk4"},323],["ServerNonc
+0340: e",[],{"ServerNonce":"IU0M86HGZgnPROqsr8NbGz"},141],["SiteData",
+0380: [],{"server_revision":1001677202,"client_revision":1001677202,"t
+03c0: ier":"","push_phase":"C3","pkg_cohort":"PHASED:DEFAULT","pr":1,"
+0400: haste_site":"www","be_one_ahead":false,"ir_on":true,"is_rtl":fal
+0440: se,"is_comet":false,"hsi":"6789922205481767864-0","spin":4,"__sp
+0480: in_r":1001677202,"__spin_b":"trunk","__spin_t":1580901957,"vip":
+04c0: "31.13.72.36"},317],["SprinkleConfig",[],{"param_name":"jazoest"
+0500: ,"version":2,"should_randomize":false},2111],["UserAgentData",[]
+0540: ,{"browserArchitecture":"32","browserFullVersion":"7.68.0","brow
+0580: serMinorVersion":68,"browserName":"Curl","browserVersion":7,"dev
+05c0: iceName":"Unknown",
+16:25:57.546000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.546000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.546000 <= Recv data, 942 bytes (0x3ae)
+0000: "engineName":"Unknown","engineVersion":null,"platformArchitectur
+0040: e":"32","platformName":"Unknown","platformVersion":null,"platfor
+0080: mFullVersion":null},527],["PromiseUsePolyfillSetImmediateGK",[],
+00c0: {"www_always_use_polyfill_setimmediate":false},2190],["DataStore
+0100: Config",[],{"expandoKey":"__FB_STORE","useExpando":true},2915],[
+0140: "CookieCoreLoggingConfig",[],{"maximumIgnorableStallMs":16.67,"s
+0180: ampleRate":9.7e-5,"sampleRateClassic":1.0e-10,"sampleRateFastSta
+01c0: le":1.0e-8},3401],["ImmediateImplementationExperiments",[],{"pre
+0200: fer_message_channel":true},3419],["DTSGInitData",[],{"token":"",
+0240: "async_get_token":""},3515],["UriNeedRawQuerySVConfig",[],{"uris
+0280: ":["dms.netmng.com","doubleclick.net","r.msn.com","watchit.sky.c
+02c0: om","graphite.instagram.com","www.kfc.co.th","learn.pantheon.io"
+0300: ,"www.landmarkshops.in","www.ncl.com","s0.wp.com","www.tatacliq.
+0340: com","bs.serving-sys.com","kohls.com","lazada.co.th","xg4ken.com
+0380: ","technopark.ru","officedepot.com.mx","bestbu
+16:25:57.593000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.593000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.593000 <= Recv data, 1491 bytes (0x5d3)
+0000: y.com.mx","booking.com"]},3871],["InitialCookieConsent",[],{"def
+0040: erCookies":false,"noCookies":false,"shouldShowCookieBanner":fals
+0080: e},4328],["TrustedTypesConfig",[],{"useTrustedTypes":false,"repo
+00c0: rtOnly":true},4548],["BigPipeExperiments",[],{"link_images_to_pa
+0100: gelets":false,"enable_bigpipe_plugins":false},907],["cr:696703",
+0140: [],{"__rc":[null,"Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkB
+0180: Zm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:708886",["
+01c0: EventProfilerImpl"],{"__rc":["EventProfilerImpl","Aa2gAFCr0hAl7f
+0200: 4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2
+0240: bk3RusQJA"]},-1],["cr:717822",["TimeSliceImpl"],{"__rc":["TimeSl
+0280: iceImpl","Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-C
+02c0: opjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:806696",["clearTim
+0300: eoutBlue"],{"__rc":["clearTimeoutBlue","Aa2gAFCr0hAl7f4EU3h79f-t
+0340: b9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"
+0380: ]},-1],["cr:807042",["setTimeoutBlue"],{"__rc":["setTimeoutBlue"
+03c0: ,"Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg3
+0400: 6Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:896462",["setIntervalAcros
+0440: sTransitionsBlue"],{"__rc":["setIntervalAcrossTransitionsBlue","
+0480: Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36H
+04c0: yx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:986633",["setTimeoutAcrossTr
+0500: ansitionsBlue"],{"__rc":["setTimeoutAcrossTransitionsBlue","Aa2g
+0540: AFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7y
+0580: hXZB04CtR2bk3RusQJA"]},-1],["cr:1003267",["clearIntervalBlue"],{
+05c0: "__rc":["clearInter
+16:25:57.593000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.593000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.593000 <= Recv data, 1500 bytes (0x5dc)
+0000: valBlue","Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-C
+0040: opjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:1100101",["request
+0080: AnimationFrameAcrossTransitionsSimple"],{"__rc":["requestAnimati
+00c0: onFrameAcrossTransitionsSimple","Aa28vT8c3Lttoz2jxyxU9WQBKsGFWC8
+0100: hEqiuy2dFISiMrffFNP6ivhKw_6cm35xT5t2Jzs0"]},-1],["cr:896461",["s
+0140: etIntervalBlue"],{"__rc":["setIntervalBlue","Aa2gAFCr0hAl7f4EU3h
+0180: 79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3Ru
+01c0: sQJA"]},-1],["cr:1268308",["BanzaiNew"],{"__rc":["BanzaiNew","Aa
+0200: 0Dylnp5hRBttuKwpYZ6sA3Txt8AtvVPrW1Q1XgmPoe1x5-IHpBX3_3enKMRtxnzl
+0240: 2v7VaUG628RQa2uIPHaPMK5HQbEeLu"]},-1],["cr:729414",[],{"__rc":[n
+0280: ull,"Aa0mYTbZTiNInXJqMIq_xDc8OkJydOiNWEGxtOotpbI-CuWf1KyPerluBg3
+02c0: pjjye8J1tWCzgouNugHuxsYRk"]},-1],["EventConfig",[],{"sampling":{
+0300: "bandwidth":0,"play":0,"playing":0,"progress":0,"pause":0,"ended
+0340: ":0,"seeked":0,"seeking":0,"waiting":0,"loadedmetadata":0,"canpl
+0380: ay":0,"selectionchange":0,"change":0,"timeupdate":2000000,"adapt
+03c0: ation":0,"focus":0,"blur":0,"load":0,"error":0,"message":0,"abor
+0400: t":0,"storage":0,"scroll":200000,"mousemove":20000,"mouseover":1
+0440: 0000,"mouseout":10000,"mousewheel":1,"MSPointerMove":10000,"keyd
+0480: own":0.1,"click":0.02,"mouseup":0.02,"__100ms":0.001,"__default"
+04c0: :5000,"__min":100,"__interactionDefault":200,"__eventDefault":10
+0500: 0000},"page_sampling_boost":1,"interaction_regexes":{"BlueBarAcc
+0540: ountChevronMenu":" _5lxs(?: .*)?$","BlueBarHomeButton":" _blueba
+0580: rLinkHome__interaction-root(?: .*)?$","BlueBarProfileLink":" _1k
+05c0: 67(?: .*)?$","ReactComposerS
+16:25:57.593000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.593000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.593000 <= Recv data, 730 bytes (0x2da)
+0000: proutMedia":" _1pnt(?: .*)?$","ReactComposerSproutAlbum":" _1pnu
+0040: (?: .*)?$","ReactComposerSproutNote":" _3-9x(?: .*)?$","ReactCom
+0080: poserSproutLocation":" _1pnv(?: .*)?$","ReactComposerSproutActiv
+00c0: ity":" _1pnz(?: .*)?$","ReactComposerSproutPeople":" _1pn-(?: .*
+0100: )?$","ReactComposerSproutLiveVideo":" _5tv7(?: .*)?$","ReactComp
+0140: oserSproutMarkdown":" _311p(?: .*)?$","ReactComposerSproutFormat
+0180: tedText":" _mwg(?: .*)?$","ReactComposerSproutSticker":" _2vri(?
+01c0: : .*)?$","ReactComposerSproutSponsor":" _5t5q(?: .*)?$","ReactCo
+0200: mposerSproutEllipsis":" _1gr3(?: .*)?$","ReactComposerSproutCont
+0240: actYourRepresentative":" _3cnv(?: .*)?$","ReactComposerSproutFun
+0280: Fact":" _2_xs(?: .*)?$","TextExposeSeeMoreLink":" see_more_link(
+02c0: ?: .*)?$","SnowliftBigClos
+16:25:57.593000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.593000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.593000 <= Recv data, 1491 bytes (0x5d3)
+0000: eButton":"(?: _xlt(?: .*)? _418x(?: .*)?$| _418x(?: .*)? _xlt(?:
+0040:  .*)?$)","SnowliftPrevPager":"(?: snowliftPager(?: .*)? prev(?: 
+0080: .*)?$| prev(?: .*)? snowliftPager(?: .*)?$)","SnowliftNextPager"
+00c0: :"(?: snowliftPager(?: .*)? next(?: .*)?$| next(?: .*)? snowlift
+0100: Pager(?: .*)?$)","SnowliftFullScreenButton":"#fbPhotoSnowliftFul
+0140: lScreenSwitch( .+)*","PrivacySelectorMenu":"(?: _57di(?: .*)? _2
+0180: wli(?: .*)?$| _2wli(?: .*)? _57di(?: .*)?$)","ReactComposerFeedX
+01c0: Sprouts":" _nh6(?: .*)?$","SproutsComposerStatusTab":" _sg1(?: .
+0200: *)?$","SproutsComposerLiveVideoTab":" _sg1(?: .*)?$","SproutsCom
+0240: poserAlbumTab":" _sg1(?: .*)?$","composerAudienceSelector":" _ej
+0280: 0(?: .*)?$","FeedHScrollAttachmentsPrevPager":" _1qqy(?: .*)?$",
+02c0: "FeedHScrollAttachmentsNextPager":" _1qqz(?: .*)?$","DockChatTab
+0300: Flyout":" fbDockChatTabFlyout(?: .*)?$","PrivacyLiteJewel":" _59
+0340: fc(?: .*)?$","ActorSelector":" _6vh(?: .*)?$","LegacyMentionsInp
+0380: ut":"(?: ReactLegacyMentionsInput(?: .*)? uiMentionsInput(?: .*)
+03c0: ? _2xwx(?: .*)?$| uiMentionsInput(?: .*)? ReactLegacyMentionsInp
+0400: ut(?: .*)? _2xwx(?: .*)?$| _2xwx(?: .*)? ReactLegacyMentionsInpu
+0440: t(?: .*)? uiMentionsInput(?: .*)?$| ReactLegacyMentionsInput(?: 
+0480: .*)? _2xwx(?: .*)? uiMentionsInput(?: .*)?$| uiMentionsInput(?: 
+04c0: .*)? _2xwx(?: .*)? ReactLegacyMentionsInput(?: .*)?$| _2xwx(?: .
+0500: *)? uiMentionsInput(?: .*)? ReactLegacyMentionsInput(?: .*)?$)",
+0540: "UFIActionLinksEmbedLink":" _2g1w(?: .*)?$","UFIPhotoAttachLink"
+0580: :" UFIPhotoAttachLinkWrapper(?: .*)?$","UFIMentionsInputProxy":"
+05c0:  _1osa(?: .*)?$","U
+16:25:57.593000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.593000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.593000 <= Recv data, 1500 bytes (0x5dc)
+0000: FIMentionsInputDummy":" _1osc(?: .*)?$","UFIOrderingModeSelector
+0040: ":" _3scp(?: .*)?$","UFIPager":"(?: UFIPagerRow(?: .*)? UFIRow(?
+0080: : .*)?$| UFIRow(?: .*)? UFIPagerRow(?: .*)?$)","UFIReplyRow":"(?
+00c0: : UFIReplyRow(?: .*)? UFICommentReply(?: .*)?$| UFICommentReply(
+0100: ?: .*)? UFIReplyRow(?: .*)?$)","UFIReplySocialSentence":" UFIRep
+0140: lySocialSentenceRow(?: .*)?$","UFIShareLink":" _5f9b(?: .*)?$","
+0180: UFIStickerButton":" UFICommentStickerButton(?: .*)?$","MentionsI
+01c0: nput":" _5yk1(?: .*)?$","FantaChatTabRoot":" _3_9e(?: .*)?$","Sn
+0200: owliftViewableRoot":" _2-sx(?: .*)?$","ReactBlueBarJewelButton":
+0240: " _5fwr(?: .*)?$","UFIReactionsDialogLayerImpl":" _1oxk(?: .*)?$
+0280: ","UFIReactionsLikeLinkImpl":" _4x9_(?: .*)?$","UFIReactionsLink
+02c0: ImplRoot":" _khz(?: .*)?$","Reaction":" _iuw(?: .*)?$","UFIReact
+0300: ionsMenuImpl":" _iu-(?: .*)?$","UFIReactionsSpatialReactionIconC
+0340: ontainer":" _1fq9(?: .*)?$","VideoComponentPlayButton":" _bsl(?:
+0380:  .*)?$","FeedOptionsPopover":" _b1e(?: .*)?$","UFICommentLikeCou
+03c0: nt":" UFICommentLikeButton(?: .*)?$","UFICommentLink":" _5yxe(?:
+0400:  .*)?$","ChatTabComposerInputContainer":" _552h(?: .*)?$","ChatT
+0440: abHeader":" _15p4(?: .*)?$","DraftEditor":" _5rp7(?: .*)?$","Cha
+0480: tSideBarDropDown":" _5vm9(?: .*)?$","SearchBox":" _539-(?: .*)?$
+04c0: ","ChatSideBarLink":" _55ln(?: .*)?$","MessengerSearchTypeahead"
+0500: :" _3rh8(?: .*)?$","NotificationListItem":" _33c(?: .*)?$","Mess
+0540: ageJewelListItem":" messagesContent(?: .*)?$","Messages_Jewel_Bu
+0580: tton":" _3eo8(?: .*)?$","Notifications_Jewel_Button":" _3eo9(?: 
+05c0: .*)?$","snowliftopen":" _342
+16:25:57.609000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.609000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.609000 <= Recv data, 1453 bytes (0x5ad)
+0000: u(?: .*)?$","NoteTextSeeMoreLink":" _3qd_(?: .*)?$","fbFeedOptio
+0040: nsPopover":" _1he6(?: .*)?$","Requests_Jewel_Button":" _3eoa(?: 
+0080: .*)?$","UFICommentActionLinkAjaxify":" _15-3(?: .*)?$","UFIComme
+00c0: ntActionLinkRedirect":" _15-6(?: .*)?$","UFICommentActionLinkDis
+0100: patched":" _15-7(?: .*)?$","UFICommentCloseButton":" _36rj(?: .*
+0140: )?$","UFICommentActionsRemovePreview":" _460h(?: .*)?$","UFIComm
+0180: entActionsReply":" _460i(?: .*)?$","UFICommentActionsSaleItemMes
+01c0: sage":" _460j(?: .*)?$","UFICommentActionsAcceptAnswer":" _460k(
+0200: ?: .*)?$","UFICommentActionsUnacceptAnswer":" _460l(?: .*)?$","U
+0240: FICommentReactionsLikeLink":" _3-me(?: .*)?$","UFICommentMenu":"
+0280:  _1-be(?: .*)?$","UFIMentionsInputFallback":" _289b(?: .*)?$","U
+02c0: FIMentionsInputComponent":" _289c(?: .*)?$","UFIMentionsInputPro
+0300: xyInput":" _432z(?: .*)?$","UFIMentionsInputProxyDummy":" _432-(
+0340: ?: .*)?$","UFIPrivateReplyLinkMessage":" _14hj(?: .*)?$","UFIPri
+0380: vateReplyLinkSeeReply":" _14hk(?: .*)?$","ChatCloseButton":" _4v
+03c0: u4(?: .*)?$","ChatTabComposerPhotoUploader":" _13f-(?: .*)?$","C
+0400: hatTabComposerGroupPollingButton":" _13f_(?: .*)?$","ChatTabComp
+0440: oserGames":" _13ga(?: .*)?$","ChatTabComposerPlan":" _13gb(?: .*
+0480: )?$","ChatTabComposerFileUploader":" _13gd(?: .*)?$","ChatTabSti
+04c0: ckersButton":" _13ge(?: .*)?$","ChatTabComposerGifButton":" _13g
+0500: f(?: .*)?$","ChatTabComposerEmojiPicker":" _13gg(?: .*)?$","Chat
+0540: TabComposerLikeButton":" _13gi(?: .*)?$","ChatTabComposerP2PButt
+0580: on":" _13gj(?: .*)?$","ChatTabComposerQuickCa
+16:25:57.609000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.609000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.609000 <= Recv data, 1491 bytes (0x5d3)
+0000: m":" _13gk(?: .*)?$","ChatTabHeaderAudioRTCButton":" _461a(?: .*
+0040: )?$","ChatTabHeaderVideoRTCButton":" _461b(?: .*)?$","ChatTabHea
+0080: derOptionsButton":" _461_(?: .*)?$","ChatTabHeaderAddToThreadBut
+00c0: ton":" _4620(?: .*)?$","ReactComposerMediaSprout":" _fk5(?: .*)?
+0100: $","UFIReactionsBlingSocialSentenceComments":" _-56(?: .*)?$","U
+0140: FIReactionsBlingSocialSentenceSeens":" _2x0l(?: .*)?$","UFIReact
+0180: ionsBlingSocialSentenceShares":" _2x0m(?: .*)?$","UFIReactionsBl
+01c0: ingSocialSentenceViews":" _-5c(?: .*)?$","UFIReactionsBlingSocia
+0200: lSentence":" _-5d(?: .*)?$","UFIReactionsSocialSentence":" _1vaq
+0240: (?: .*)?$","VideoFullscreenButton":" _39ip(?: .*)?$","Tahoe":" _
+0280: 400z(?: .*)?$","TahoeFromVideoPlayer":" _1vek(?: .*)?$","TahoeFr
+02c0: omVideoLink":" _2-40(?: .*)?$","TahoeFromPhoto":" _2ju5(?: .*)?$
+0300: ","FBStoryTrayItem":" _1fvw(?: .*)?$","Mobile_Feed_Jewel_Button"
+0340: :"#feed_jewel( .+)*","Mobile_Requests_Jewel_Button":"#requests_j
+0380: ewel( .+)*","Mobile_Messages_Jewel_Button":"#messages_jewel( .+)
+03c0: *","Mobile_Notifications_Jewel_Button":"#notifications_jewel( .+
+0400: )*","Mobile_Search_Jewel_Button":"#search_jewel( .+)*","Mobile_B
+0440: ookmarks_Jewel_Button":"#bookmarks_jewel( .+)*","Mobile_Feed_UFI
+0480: _Comment_Button_Permalink":" _l-a(?: .*)?$","Mobile_Feed_UFI_Com
+04c0: ment_Button_Flyout":" _4qeq(?: .*)?$","Mobile_Feed_UFI_Token_Bar
+0500: _Flyout":" _4qer(?: .*)?$","Mobile_Feed_UFI_Token_Bar_Permalink"
+0540: :" _4-09(?: .*)?$","Mobile_UFI_Share_Button":" _15kr(?: .*)?$","
+0580: Mobile_Feed_Photo_Permalink":" _1mh-(?: .*)?$","Mobile_Feed_Vide
+05c0: o_Permalink":" _65g
+16:25:57.609000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.609000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.609000 <= Recv data, 1500 bytes (0x5dc)
+0000: _(?: .*)?$","Mobile_Feed_Profile_Permalink":" _4kk6(?: .*)?$","M
+0040: obile_Feed_Story_Permalink":" _26yo(?: .*)?$","Mobile_Feed_Page_
+0080: Permalink":" _4e81(?: .*)?$","Mobile_Feed_Group_Permalink":" _20
+00c0: u1(?: .*)?$","Mobile_Feed_Event_Permalink":" _20u0(?: .*)?$","Pr
+0100: ofileIntroCardAddFeaturedMedia":" _30qr(?: .*)?$","ProfileSectio
+0140: nAbout":" _84wb(?: .*)?$","ProfileSectionAllRelationships":" _84
+0180: wc(?: .*)?$","ProfileSectionAtWork":" _2fnv(?: .*)?$","ProfileSe
+01c0: ctionContactBasic":" _84vf(?: .*)?$","ProfileSectionEducation":"
+0200:  _84vh(?: .*)?$","ProfileSectionOverview":" _84vj(?: .*)?$","Pro
+0240: fileSectionPlaces":" _84vg(?: .*)?$","ProfileSectionYearOverview
+0280: s":" _84vi(?: .*)?$","IntlPolyglotHomepage":" _Interaction__Intl
+02c0: PolyglotVoteActivityCardButton(?: .*)?$","ProtonElementSelection
+0300: ":" _67ft(?: .*)?$"},"interaction_boost":{"SnowliftPrevPager":0.
+0340: 2,"SnowliftNextPager":0.2,"ChatSideBarLink":2,"MessengerSearchTy
+0380: peahead":2,"Messages_Jewel_Button":2.5,"Notifications_Jewel_Butt
+03c0: on":1.5,"Tahoe":30,"ProtonElementSelection":4},"event_types":{"B
+0400: lueBarAccountChevronMenu":["click"],"BlueBarHomeButton":["click"
+0440: ],"BlueBarProfileLink":["click"],"ReactComposerSproutMedia":["cl
+0480: ick"],"ReactComposerSproutAlbum":["click"],"ReactComposerSproutN
+04c0: ote":["click"],"ReactComposerSproutLocation":["click"],"ReactCom
+0500: poserSproutActivity":["click"],"ReactComposerSproutPeople":["cli
+0540: ck"],"ReactComposerSproutLiveVideo":["click"],"ReactComposerSpro
+0580: utMarkdown":["click"],"ReactComposerSproutFormattedText":["click
+05c0: "],"ReactComposerSproutStick
+16:25:57.625000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.625000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.625000 <= Recv data, 1500 bytes (0x5dc)
+0000: er":["click"],"ReactComposerSproutSponsor":["click"],"ReactCompo
+0040: serSproutEllipsis":["click"],"ReactComposerSproutContactYourRepr
+0080: esentative":["click"],"ReactComposerSproutFunFact":["click"],"Te
+00c0: xtExposeSeeMoreLink":["click"],"SnowliftBigCloseButton":["click"
+0100: ],"SnowliftPrevPager":["click"],"SnowliftNextPager":["click"],"S
+0140: nowliftFullScreenButton":["click"],"PrivacySelectorMenu":["click
+0180: "],"ReactComposerFeedXSprouts":["click"],"SproutsComposerStatusT
+01c0: ab":["click"],"SproutsComposerLiveVideoTab":["click"],"SproutsCo
+0200: mposerAlbumTab":["click"],"composerAudienceSelector":["click"],"
+0240: FeedHScrollAttachmentsPrevPager":["click"],"FeedHScrollAttachmen
+0280: tsNextPager":["click"],"DockChatTabFlyout":["click"],"PrivacyLit
+02c0: eJewel":["click"],"ActorSelector":["click"],"LegacyMentionsInput
+0300: ":["click"],"UFIActionLinksEmbedLink":["click"],"UFIPhotoAttachL
+0340: ink":["click"],"UFIMentionsInputProxy":["click"],"UFIMentionsInp
+0380: utDummy":["click"],"UFIOrderingModeSelector":["click"],"UFIPager
+03c0: ":["click"],"UFIReplyRow":["click"],"UFIReplySocialSentence":["c
+0400: lick"],"UFIShareLink":["click"],"UFIStickerButton":["click"],"Me
+0440: ntionsInput":["click"],"FantaChatTabRoot":["click"],"SnowliftVie
+0480: wableRoot":["click"],"ReactBlueBarJewelButton":["click"],"UFIRea
+04c0: ctionsDialogLayerImpl":["click"],"UFIReactionsLikeLinkImpl":["cl
+0500: ick"],"UFIReactionsLinkImplRoot":["click"],"Reaction":["click"],
+0540: "UFIReactionsMenuImpl":["click"],"UFIReactionsSpatialReactionIco
+0580: nContainer":["click"],"VideoComponentPlayButton":["click"],"Feed
+05c0: OptionsPopover":["click"],"U
+16:25:57.625000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.625000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.625000 <= Recv data, 1500 bytes (0x5dc)
+0000: FICommentLikeCount":["click"],"UFICommentLink":["click"],"ChatTa
+0040: bComposerInputContainer":["click"],"ChatTabHeader":["click"],"Dr
+0080: aftEditor":["click"],"ChatSideBarDropDown":["click"],"SearchBox"
+00c0: :["click"],"ChatSideBarLink":["mouseup"],"MessengerSearchTypeahe
+0100: ad":["click"],"NotificationListItem":["click"],"MessageJewelList
+0140: Item":["click"],"Messages_Jewel_Button":["click"],"Notifications
+0180: _Jewel_Button":["click"],"snowliftopen":["click"],"NoteTextSeeMo
+01c0: reLink":["click"],"fbFeedOptionsPopover":["click"],"Requests_Jew
+0200: el_Button":["click"],"UFICommentActionLinkAjaxify":["click"],"UF
+0240: ICommentActionLinkRedirect":["click"],"UFICommentActionLinkDispa
+0280: tched":["click"],"UFICommentCloseButton":["click"],"UFICommentAc
+02c0: tionsRemovePreview":["click"],"UFICommentActionsReply":["click"]
+0300: ,"UFICommentActionsSaleItemMessage":["click"],"UFICommentActions
+0340: AcceptAnswer":["click"],"UFICommentActionsUnacceptAnswer":["clic
+0380: k"],"UFICommentReactionsLikeLink":["click"],"UFICommentMenu":["c
+03c0: lick"],"UFIMentionsInputFallback":["click"],"UFIMentionsInputCom
+0400: ponent":["click"],"UFIMentionsInputProxyInput":["click"],"UFIMen
+0440: tionsInputProxyDummy":["click"],"UFIPrivateReplyLinkMessage":["c
+0480: lick"],"UFIPrivateReplyLinkSeeReply":["click"],"ChatCloseButton"
+04c0: :["click"],"ChatTabComposerPhotoUploader":["click"],"ChatTabComp
+0500: oserGroupPollingButton":["click"],"ChatTabComposerGames":["click
+0540: "],"ChatTabComposerPlan":["click"],"ChatTabComposerFileUploader"
+0580: :["click"],"ChatTabStickersButton":["click"],"ChatTabComposerGif
+05c0: Button":["click"],"ChatTabCo
+16:25:57.625000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.625000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.625000 <= Recv data, 522 bytes (0x20a)
+0000: mposerEmojiPicker":["click"],"ChatTabComposerLikeButton":["click
+0040: "],"ChatTabComposerP2PButton":["click"],"ChatTabComposerQuickCam
+0080: ":["click"],"ChatTabHeaderAudioRTCButton":["click"],"ChatTabHead
+00c0: erVideoRTCButton":["click"],"ChatTabHeaderOptionsButton":["click
+0100: "],"ChatTabHeaderAddToThreadButton":["click"],"ReactComposerMedi
+0140: aSprout":["click"],"UFIReactionsBlingSocialSentenceComments":["c
+0180: lick"],"UFIReactionsBlingSocialSentenceSeens":["click"],"UFIReac
+01c0: tionsBlingSocialSentenceShares":["click"],"UFIReactionsBlingSoci
+0200: alSentence
+16:25:57.625000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.625000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.625000 <= Recv data, 1491 bytes (0x5d3)
+0000: Views":["click"],"UFIReactionsBlingSocialSentence":["click"],"UF
+0040: IReactionsSocialSentence":["click"],"VideoFullscreenButton":["cl
+0080: ick"],"Tahoe":["click"],"TahoeFromVideoPlayer":["click"],"TahoeF
+00c0: romVideoLink":["click"],"TahoeFromPhoto":["click"],"":["click"],
+0100: "FBStoryTrayItem":["click"],"Mobile_Feed_Jewel_Button":["click"]
+0140: ,"Mobile_Requests_Jewel_Button":["click"],"Mobile_Messages_Jewel
+0180: _Button":["click"],"Mobile_Notifications_Jewel_Button":["click"]
+01c0: ,"Mobile_Search_Jewel_Button":["click"],"Mobile_Bookmarks_Jewel_
+0200: Button":["click"],"Mobile_Feed_UFI_Comment_Button_Permalink":["c
+0240: lick"],"Mobile_Feed_UFI_Comment_Button_Flyout":["click"],"Mobile
+0280: _Feed_UFI_Token_Bar_Flyout":["click"],"Mobile_Feed_UFI_Token_Bar
+02c0: _Permalink":["click"],"Mobile_UFI_Share_Button":["click"],"Mobil
+0300: e_Feed_Photo_Permalink":["click"],"Mobile_Feed_Video_Permalink":
+0340: ["click"],"Mobile_Feed_Profile_Permalink":["click"],"Mobile_Feed
+0380: _Story_Permalink":["click"],"Mobile_Feed_Page_Permalink":["click
+03c0: "],"Mobile_Feed_Group_Permalink":["click"],"Mobile_Feed_Event_Pe
+0400: rmalink":["click"],"ProfileIntroCardAddFeaturedMedia":["click"],
+0440: "ProfileSectionAbout":["click"],"ProfileSectionAllRelationships"
+0480: :["click"],"ProfileSectionAtWork":["click"],"ProfileSectionConta
+04c0: ctBasic":["click"],"ProfileSectionEducation":["click"],"ProfileS
+0500: ectionOverview":["click"],"ProfileSectionPlaces":["click"],"Prof
+0540: ileSectionYearOverviews":["click"],"IntlPolyglotHomepage":["clic
+0580: k"],"ProtonElementSelection":["click"]},"manual_instrumentation"
+05c0: :true,"profile_eage
+16:25:57.625000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.625000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.625000 <= Recv data, 1500 bytes (0x5dc)
+0000: r_execution":true,"disable_heuristic":true,"disable_event_profil
+0040: er":false},1726],["AdsInterfacesSessionConfig",[],{},2393],["Tim
+0080: eSliceInteractionSV",[],{"on_demand_reference_counting":true,"on
+00c0: _demand_profiling_counters":true,"default_rate":1000,"lite_defau
+0100: lt_rate":100,"interaction_to_lite_coinflip":{"ADS_INTERFACES_INT
+0140: ERACTION":0,"ads_perf_scenario":0,"ads_wait_time":0,"Event":1,"v
+0180: ideo_psr":0,"video_stall":0},"interaction_to_coinflip":{"ADS_INT
+01c0: ERFACES_INTERACTION":1,"ads_perf_scenario":1,"ads_wait_time":1,"
+0200: video_psr":1000000,"video_stall":2500000,"Event":100,"pixelcloud
+0240: _view_performance":25,"intern_notify_inbox_page_load":10,"intern
+0280: _notify_jewel_list_load":10,"tasks_initial_page_load":1,"watch_c
+02c0: arousel_left_scroll":1,"watch_carousel_right_scroll":1,"watch_se
+0300: ctions_load_more":1,"watch_discover_scroll":1,"fbpkg_ui":1,"sevm
+0340: anager_powersearch_initial_page_load":10,"network_ui":1,"daiquer
+0380: y_interactive_query":1},"enable_heartbeat":true,"maxBlockMergeDu
+03c0: ration":0,"maxBlockMergeDistance":0,"enable_banzai_stream":true,
+0400: "user_timing_coinflip":50,"banzai_stream_coinflip":1,"compressio
+0440: n_enabled":true,"ref_counting_fix":false,"ref_counting_cont_fix"
+0480: :false,"also_record_new_timeslice_format":false,"force_async_req
+04c0: uest_tracing_on":false},2609],["BanzaiConfig",[],{"EXPIRY":86400
+0500: 000,"MAX_SIZE":10000,"MAX_WAIT":150000,"RESTORE_WAIT":150000,"bl
+0540: acklist":["time_spent"],"gks":{"boosted_component":true,"boosted
+0580: _pagelikes":true,"jslogger":true,"mercury_send_error_logging":tr
+05c0: ue,"platform_oauth_client_ev
+16:25:57.640000 <= Recv SSL data, 5 bytes (0x5)
+0000: ....h
+16:25:57.640000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.640000 <= Recv data, 1111 bytes (0x457)
+0000: ents":true,"xtrackable_clientview_batch":true,"visibility_tracki
+0040: ng":true,"graphexplorer":true,"gqls_web_logging":true,"sticker_s
+0080: earch_ranking":true}},7],["ZeroRewriteRules",[],{"rewrite_rules"
+00c0: :{},"whitelist":{"\/hr\/r":1,"\/hr\/p":1,"\/zero\/unsupported_br
+0100: owser\/":1,"\/zero\/policy\/optin":1,"\/zero\/optin\/write\/":1,
+0140: "\/zero\/optin\/legal\/":1,"\/zero\/optin\/free\/":1,"\/about\/p
+0180: rivacy\/":1,"\/about\/privacy\/update\/":1,"\/about\/privacy\/up
+01c0: date":1,"\/zero\/toggle\/welcome\/":1,"\/zero\/toggle\/nux\/":1,
+0200: "\/fup\/interstitial\/":1,"\/work\/landing":1,"\/work\/login\/":
+0240: 1,"\/work\/email\/":1,"\/ai.php":1,"\/js_dialog_resources\/dialo
+0280: g_descriptions_android.json":0,"\/connect\/jsdialog\/MPlatformAp
+02c0: pInvitesJSDialog\/":0,"\/connect\/jsdialog\/MPlatformOAuthShimJS
+0300: Dialog\/":0,"\/connect\/jsdialog\/MPlatformLikeJSDialog\/":0,"\/
+0340: qp\/interstitial\/":1,"\/qp\/action\/redirect\/":1,"\/qp\/action
+0380: \/close\/":1,"\/zero\/support\/ineligible\/":1,"\/zero_balance_r
+03c0: edirect\/":1,"\/zero_balance_redirect":1,"\/zero_balance_redirec
+0400: t\/l\/":1,"\/l.php":1,"\/lsr.php":1,"\/ajax\/dtsg\/":1,"\/checkp
+0440: oint\/block\/":1,"\/exi
+16:25:57.640000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.640000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.640000 <= Recv data, 1491 bytes (0x5d3)
+0000: tdsite":1,"\/zero\/balance\/pixel\/":1,"\/zero\/balance\/":1,"\/
+0040: zero\/balance\/carrier_landing\/":1,"\/zero\/flex\/logging\/":1,
+0080: "\/tr":1,"\/tr\/":1,"\/sem_campaigns\/sem_pixel_test\/":1,"\/boo
+00c0: kmarks\/flyout\/body\/":1,"\/zero\/subno\/":1,"\/confirmemail.ph
+0100: p":1,"\/policies\/":1,"\/mobile\/internetdotorg\/classifier\/":1
+0140: ,"\/zero\/dogfooding":1,"\/xti.php":1,"\/zero\/fblite\/config\/"
+0180: :1,"\/hr\/zsh\/wc\/":1,"\/4oh4.php":1,"\/autologin.php":1,"\/bir
+01c0: thday_help.php":1,"\/checkpoint\/":1,"\/contact-importer\/":1,"\
+0200: /cr.php":1,"\/legal\/terms\/":1,"\/login.php":1,"\/login\/":1,"\
+0240: /mobile\/account\/":1,"\/n\/":1,"\/remote_test_device\/":1,"\/up
+0280: sell\/buy\/":1,"\/upsell\/buyconfirm\/":1,"\/upsell\/buyresult\/
+02c0: ":1,"\/upsell\/promos\/":1,"\/upsell\/continue\/":1,"\/upsell\/h
+0300: \/promos\/":1,"\/upsell\/loan\/learnmore\/":1,"\/upsell\/purchas
+0340: e\/":1,"\/upsell\/promos\/upgrade\/":1,"\/upsell\/buy_redirect\/
+0380: ":1,"\/upsell\/loan\/buyconfirm\/":1,"\/upsell\/loan\/buy\/":1,"
+03c0: \/upsell\/sms\/":1,"\/wap\/a\/channel\/reconnect.php":1,"\/wap\/
+0400: a\/nux\/wizard\/nav.php":1,"\/wap\/appreg.php":1,"\/wap\/birthda
+0440: y_help.php":1,"\/wap\/c.php":1,"\/wap\/confirmemail.php":1,"\/wa
+0480: p\/cr.php":1,"\/wap\/login.php":1,"\/wap\/r.php":1,"\/zero\/data
+04c0: policy":1,"\/a\/timezone.php":1,"\/a\/bz":1,"\/bz\/reliability":
+0500: 1,"\/r.php":1,"\/mr\/":1,"\/reg\/":1,"\/registration\/log\/":1,"
+0540: \/terms\/":1,"\/f123\/":1,"\/expert\/":1,"\/experts\/":1,"\/term
+0580: s\/index.php":1,"\/terms.php":1,"\/srr\/":1,"\/msite\/redirect\/
+05c0: ":1,"\/fbs\/pixel\/
+16:25:57.640000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.640000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.640000 <= Recv data, 1500 bytes (0x5dc)
+0000: ":1,"\/contactpoint\/preconfirmation\/":1,"\/contactpoint\/cliff
+0040: \/":1,"\/contactpoint\/confirm\/submit\/":1,"\/contactpoint\/con
+0080: firmed\/":1,"\/contactpoint\/login\/":1,"\/preconfirmation\/cont
+00c0: actpoint_change\/":1,"\/help\/contact\/":1,"\/survey\/":1,"\/ups
+0100: ell\/loyaltytopup\/accept\/":1,"\/settings\/":1,"\/lite\/":1}},1
+0140: 478],["cr:925100",["RunBlue"],{"__rc":["RunBlue","Aa2gAFCr0hAl7f
+0180: 4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2
+01c0: bk3RusQJA"]},-1],["cr:692209",["cancelIdleCallbackBlue"],{"__rc"
+0200: :["cancelIdleCallbackBlue","Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWll
+0240: eBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:
+0280: 695720",["SnappyCompressUtil"],{"__rc":["SnappyCompressUtil","Aa
+02c0: 0kZ8y-JDPsynegojJjuyYgol2tbDGzmeJxoi4h-8wmmH8fQM1QvWW8_wcydXpPtJ
+0300: RKaJnZGazNpOHN6RmmccEpV3w"]},-1]]);new (require("ServerJS"))().h
+0340: andle({"require":[["markJSEnabled"],["lowerDomain"],["URLFragmen
+0380: tPrelude"],["Primer"],["BigPipe"],["Bootloader"],["TimeSlice"],[
+03c0: "ArtilleryOnUntilOffLogging","disable",[],[]],["BanzaiODS"],["Ba
+0400: nzaiScuba"],["VisualCompletionGating"]]});}, "ServerJS define", 
+0440: {"root":true})();</script></head><body class="fbx UIPage_LoggedO
+0480: ut _-kb _605a b_c3pyn-ahh x1 Locale_ru_RU" dir="ltr"><script>req
+04c0: uireLazy(["bootstrapWebSession"],function(j){j(1580901957)})</sc
+0500: ript><div class="_li" id="u_0_7"><div class="_3_s0 _1toe _3_s1 _
+0540: 3_s1 uiBoxGray noborder" data-testid="ax-navigation-menubar" id=
+0580: "u_0_8"><div class="_608m"><div class="_5aj7 _tb6"><div class="_
+05c0: 4bl7"><span class="mrm _3bcv
+16:25:57.656000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.656000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.656000 <= Recv data, 382 bytes (0x17e)
+0000:  _50f3">.............. ..</span></div><div class="_4bl9 _3bcp"><
+0040: div class="_6a _608n" aria-label="&#x41f;&#x43e;&#x43c;&#x43e;&#
+0080: x449;&#x44c; &#x441; &#x43d;&#x430;&#x432;&#x438;&#x433;&#x430;&
+00c0: #x446;&#x438;&#x435;&#x439;" aria-keyshortcuts="Alt+/" role="men
+0100: ubar" id="u_0_9"><div class="_6a uiPopover" id="u_0_a"><a role="
+0140: button" class="_42ft _4jy0 _55pi _2agf _4o_4 _63xb _p _4jy3 _5
+16:25:57.656000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.656000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.656000 <= Recv data, 1491 bytes (0x5d3)
+0000: 17h _51sy" href="#" style="max-width:200px;" aria-haspopup="true
+0040: " aria-expanded="false" rel="toggle" id="u_0_b"><span class="_55
+0080: pe">.............. ........ ................</span><span class="
+00c0: _4o_3 _3-99"><i class="img sp_7Jc01MFhvoU sx_1408f4"></i></span>
+0100: </a></div><div class="_6a _3bcs"></div><div class="_6a mrm uiPop
+0140: over" id="u_0_c"><a role="button" class="_42ft _4jy0 _55pi _2agf
+0180:  _4o_4 _3_s2 _63xb _p _4jy3 _4jy1 selected _51sy" href="#" style
+01c0: ="max-width:200px;" aria-haspopup="true" tabindex="-1" aria-expa
+0200: nded="false" rel="toggle" id="u_0_d"><span class="_55pe">.......
+0240: ............. .......... ...................... ................
+0280: ........</span><span class="_4o_3 _3-99"><i class="img sp_7Jc01M
+02c0: FhvoU sx_3a6ecf"></i></span></a></div></div></div><div class="_4
+0300: bl7 mlm pll _3bct"><div class="_6a _3bcy">.............. <span c
+0340: lass="_3bcz">alt</span> .. <span class="_3bcz">/</span> ........
+0380: ................, .......... .............. ...... ........</div
+03c0: ></div></div></div></div><div id="pagelet_bluebar" data-referrer
+0400: ="pagelet_bluebar"><div id="blueBarDOMInspector"><div class="_53
+0440: jh"><div class="loggedout_menubar_container"><div class="clearfi
+0480: x loggedout_menubar"><div class="lfloat _ohe"><h1><a href="https
+04c0: ://www.facebook.com/" title="&#x41f;&#x435;&#x440;&#x435;&#x439;
+0500: &#x442;&#x438; &#x43d;&#x430; &#x433;&#x43b;&#x430;&#x432;&#x43d
+0540: ;&#x443;&#x44e; &#x441;&#x442;&#x440;&#x430;&#x43d;&#x438;&#x446
+0580: ;&#x443; Facebook"><i class="fb_logo img sp_JNHxKjoBJYS sx_da8a4
+05c0: f"><u>Facebook</u><
+16:25:57.656000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.656000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.656000 <= Recv data, 1500 bytes (0x5dc)
+0000: /i></a></h1></div><div class="_yl4 rfloat _ohf" data-testid="roy
+0040: al_login_form"><a href="/" id="u_0_2"><span style="color: white"
+0080: >.................................. ...... .............. .... F
+00c0: acebook ... <i class="_3jii img sp_ewlXA6VIOz8 sx_36f7f7" id="u_
+0100: 0_3"></i></span></a><div class="_yl7 _ylb __tw hidden_elem" id="
+0140: u_0_4"><div class="beeperNub"></div><div class="_yl8"><div class
+0180: =""><form id="login_form" action="https://www.facebook.com/login
+01c0: /device-based/regular/login/?login_attempt=1&amp;lwv=110" method
+0200: ="post" novalidate="1" onsubmit=""><input type="hidden" name="ja
+0240: zoest" value="2620" autocomplete="off" /><input type="hidden" na
+0280: me="lsd" value="AVq5LDk4" autocomplete="off" /><div class="_erp"
+02c0: ><div class="_err"><label for="email">...................... ...
+0300: ....... ...... .......... ................</label></div><div cla
+0340: ss="_err"><input type="email" class="inputtext login_form_input_
+0380: box" name="email" id="email" data-testid="royal_email" /></div><
+03c0: div class="_ers"><label for="pass">............</label></div><di
+0400: v class="_ers"><input type="password" class="inputtext login_for
+0440: m_input_box" name="pass" id="pass" data-testid="royal_pass" /></
+0480: div><div class="_er_"><a href="https://www.facebook.com/recover/
+04c0: initiate?lwv=110&amp;ars=royal_blue_bar">............ ..........
+0500: ....?</a></div><button value="1" class="_42ft _4jy0 _es1 _3jd8 l
+0540: ogin_form_login_button _4jy5 _4jy1 selected _51sy" id="loginbutt
+0580: on" data-testid="royal_login_button" type="submit">........</but
+05c0: ton></div><input type="hidde
+16:25:57.656000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.656000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.656000 <= Recv data, 367 bytes (0x16f)
+0000: n" autocomplete="off" name="timezone" value="" id="u_0_5" /><inp
+0040: ut type="hidden" autocomplete="off" name="lgndim" value="" id="u
+0080: _0_6" /><input type="hidden" name="lgnrnd" value="032557_VRFJ" /
+00c0: ><input type="hidden" id="lgnjs" name="lgnjs" value="n" /><input
+0100:  type="hidden" autocomplete="off" name="ab_test_data" value="" /
+0140: ><input type="hidden" autocomplete="off" id="lo
+16:25:57.656000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.656000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.656000 <= Recv data, 1491 bytes (0x5d3)
+0000: cale" name="locale" value="ru_RU" /><input type="hidden" autocom
+0040: plete="off" name="login_source" value="login_bluebar" /><input t
+0080: ype="hidden" autocomplete="off" name="guid" value="" /><input ty
+00c0: pe="hidden" autocomplete="off" id="prefill_contact_point" name="
+0100: prefill_contact_point" /><input type="hidden" autocomplete="off"
+0140:  id="prefill_source" name="prefill_source" /><input type="hidden
+0180: " autocomplete="off" id="prefill_type" name="prefill_type" /></f
+01c0: orm></div><div class="_yl9">............ .......................
+0200: ............. .... Facebook?</div><a role="button" class="_42ft 
+0240: _4jy0 _yla _4jy3 _4jy2 selected _51sy mrm" href="/reg/" tabindex
+0280: ="4">......................</a></div></div></div></div></div><di
+02c0: v class="signupBanner"><div class="signup_bar_container"><div cl
+0300: ass="signup_box clearfix"><span class="signup_box_content"><a ro
+0340: le="button" class="_42ft _4jy0 signup_btn _4jy4 _4jy2 selected _
+0380: 51sy" href="/r.php?locale=ru_RU">...............................
+03c0: .....</a></span></div></div></div></div></div></div><div id="glo
+0400: balContainer" class="_cqt"><div class="fb_content clearfix " id=
+0440: "content" role="main">.......................... ........ ......
+0480: .......... .... ...............</div><div class="_cqu"><div id="
+04c0: pageFooter" data-referrer="page_footer" data-testid="page_footer
+0500: "><ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-
+0540: j _6-i" data-nocookies="1"><li>..............</li><li><a class="
+0580: _sv4" dir="ltr" href="https://www.facebook.com/l" onclick="requi
+05c0: re(&quot;IntlUtils&
+16:25:57.671000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.671000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.671000 <= Recv data, 1500 bytes (0x5dc)
+0000: quot;).setCookieLocale(&quot;en_US&quot;, &quot;ru_RU&quot;, &qu
+0040: ot;https:\/\/www.facebook.com\/l&quot;, &quot;www_list_selector&
+0080: quot;, 0); return false;" title="English (US)">English (US)</a><
+00c0: /li><li><a class="_sv4" dir="ltr" href="https://tr-tr.facebook.c
+0100: om/l" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&q
+0140: uot;tr_TR&quot;, &quot;ru_RU&quot;, &quot;https:\/\/tr-tr.facebo
+0180: ok.com\/l&quot;, &quot;www_list_selector&quot;, 1); return false
+01c0: ;" title="Turkish">T..rk..e</a></li><li><a class="_sv4" dir="ltr
+0200: " href="https://uz-uz.facebook.com/l" onclick="require(&quot;Int
+0240: lUtils&quot;).setCookieLocale(&quot;uz_UZ&quot;, &quot;ru_RU&quo
+0280: t;, &quot;https:\/\/uz-uz.facebook.com\/l&quot;, &quot;www_list_
+02c0: selector&quot;, 2); return false;" title="Uzbek">O&#039;zbek</a>
+0300: </li><li><a class="_sv4" dir="ltr" href="https://ko-kr.facebook.
+0340: com/l" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&
+0380: quot;ko_KR&quot;, &quot;ru_RU&quot;, &quot;https:\/\/ko-kr.faceb
+03c0: ook.com\/l&quot;, &quot;www_list_selector&quot;, 3); return fals
+0400: e;" title="Korean">.........</a></li><li><a class="_sv4" dir="lt
+0440: r" href="https://de-de.facebook.com/l" onclick="require(&quot;In
+0480: tlUtils&quot;).setCookieLocale(&quot;de_DE&quot;, &quot;ru_RU&qu
+04c0: ot;, &quot;https:\/\/de-de.facebook.com\/l&quot;, &quot;www_list
+0500: _selector&quot;, 4); return false;" title="German">Deutsch</a></
+0540: li><li><a class="_sv4" dir="ltr" href="https://fr-fr.facebook.co
+0580: m/l" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&qu
+05c0: ot;fr_FR&quot;, &quot;ru_RU&
+16:25:57.671000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.671000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.671000 <= Recv data, 1500 bytes (0x5dc)
+0000: quot;, &quot;https:\/\/fr-fr.facebook.com\/l&quot;, &quot;www_li
+0040: st_selector&quot;, 5); return false;" title="French (France)">Fr
+0080: an..ais (France)</a></li><li><a class="_sv4" dir="rtl" href="htt
+00c0: ps://ar-ar.facebook.com/l" onclick="require(&quot;IntlUtils&quot
+0100: ;).setCookieLocale(&quot;ar_AR&quot;, &quot;ru_RU&quot;, &quot;h
+0140: ttps:\/\/ar-ar.facebook.com\/l&quot;, &quot;www_list_selector&qu
+0180: ot;, 6); return false;" title="Arabic">..............</a></li><l
+01c0: i><a class="_sv4" dir="ltr" href="https://it-it.facebook.com/l" 
+0200: onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;it
+0240: _IT&quot;, &quot;ru_RU&quot;, &quot;https:\/\/it-it.facebook.com
+0280: \/l&quot;, &quot;www_list_selector&quot;, 7); return false;" tit
+02c0: le="Italian">Italiano</a></li><li><a class="_sv4" dir="ltr" href
+0300: ="https://es-la.facebook.com/l" onclick="require(&quot;IntlUtils
+0340: &quot;).setCookieLocale(&quot;es_LA&quot;, &quot;ru_RU&quot;, &q
+0380: uot;https:\/\/es-la.facebook.com\/l&quot;, &quot;www_list_select
+03c0: or&quot;, 8); return false;" title="Spanish">Espa..ol</a></li><l
+0400: i><a class="_sv4" dir="ltr" href="https://pt-br.facebook.com/l" 
+0440: onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;pt
+0480: _BR&quot;, &quot;ru_RU&quot;, &quot;https:\/\/pt-br.facebook.com
+04c0: \/l&quot;, &quot;www_list_selector&quot;, 9); return false;" tit
+0500: le="Portuguese (Brazil)">Portugu..s (Brasil)</a></li><li><a role
+0540: ="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog" aja
+0580: xify="/settings/language/language/?uri=https%3A%2F%2Fpt-br.faceb
+05c0: ook.com%2Fl&amp;source=www_l
+16:25:57.671000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.671000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.671000 <= Recv data, 894 bytes (0x37e)
+0000: ist_selector_more" href="#" title="&#x415;&#x449;&#x451; &#x44f;
+0040: &#x437;&#x44b;&#x43a;&#x438;"><i class="img sp_oWlD7QtF6-K sx_b5
+0080: 74dc"></i></a></li></ul><div id="contentCurve"></div><div id="pa
+00c0: geFooterChildren" role="contentinfo" aria-label="&#x421;&#x441;&
+0100: #x44b;&#x43b;&#x43a;&#x438; Facebook"><ul class="uiList pageFoot
+0140: erLinkList _509- _4ki _703 _6-i"><li><a href="/r.php" title="&#x
+0180: 420;&#x435;&#x433;&#x438;&#x441;&#x442;&#x440;&#x430;&#x446;&#x4
+01c0: 38;&#x44f; &#x43d;&#x430; Facebook">......................</a></
+0200: li><li><a href="/login/" title="&#x412;&#x43e;&#x439;&#x434;&#x4
+0240: 38;&#x442;&#x435; &#x43d;&#x430; Facebook">........</a></li><li>
+0280: <a href="https://messenger.com/" title="&#x41e;&#x446;&#x435;&#x
+02c0: 43d;&#x438;&#x442;&#x435; Messenger.">Messenger</a></li><li><a h
+0300: ref="/lite/" title="Facebook Lite &#x434;&#x43b;&#x44f; Android.
+0340: ">Facebook Lite</a></li><li><a href="https://www.facebook.com/
+16:25:57.671000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.671000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.671000 <= Recv data, 1491 bytes (0x5d3)
+0000: watch/" title="Browse our Watch videos."> Watch </a></li><li><a 
+0040: href="/directory/people/" title="&#x41f;&#x43e;&#x441;&#x43c;&#x
+0080: 43e;&#x442;&#x440;&#x438;&#x442;&#x435; &#x43d;&#x430;&#x448; &#
+00c0: x43a;&#x430;&#x442;&#x430;&#x43b;&#x43e;&#x433; &#x43f;&#x43e;&#
+0100: x43b;&#x44c;&#x437;&#x43e;&#x432;&#x430;&#x442;&#x435;&#x43b;&#x
+0140: 435;&#x439;.">........</a></li><li><a href="/directory/pages/" t
+0180: itle="&#x41f;&#x440;&#x43e;&#x441;&#x43c;&#x430;&#x442;&#x440;&#
+01c0: x438;&#x432;&#x430;&#x439;&#x442;&#x435; &#x43d;&#x430;&#x448; &
+0200: #x43a;&#x430;&#x442;&#x430;&#x43b;&#x43e;&#x433; &#x421;&#x442;&
+0240: #x440;&#x430;&#x43d;&#x438;&#x446;.">................</a></li><l
+0280: i><a href="/pages/category/">.................. ..............</
+02c0: a></li><li><a href="/places/" title="&#x41e;&#x437;&#x43d;&#x430
+0300: ;&#x43a;&#x43e;&#x43c;&#x44c;&#x442;&#x435;&#x441;&#x44c; &#x441
+0340: ; &#x43f;&#x43e;&#x43f;&#x443;&#x43b;&#x44f;&#x440;&#x43d;&#x44b
+0380: ;&#x43c;&#x438; &#x43c;&#x435;&#x441;&#x442;&#x430;&#x43c;&#x438
+03c0: ; &#x43d;&#x430; Facebook.">..........</a></li><li><a href="/gam
+0400: es/" title="&#x41f;&#x43e;&#x437;&#x43d;&#x430;&#x43a;&#x43e;&#x
+0440: 43c;&#x44c;&#x442;&#x435;&#x441;&#x44c; &#x441; &#x438;&#x433;&#
+0480: x440;&#x430;&#x43c;&#x438; &#x43d;&#x430; Facebook.">........</a
+04c0: ></li><li><a href="/directory/places/" title="&#x41f;&#x440;&#x4
+0500: 3e;&#x441;&#x43c;&#x43e;&#x442;&#x440;&#x438;&#x442;&#x435; &#x4
+0540: 3d;&#x430;&#x448; &#x43a;&#x430;&#x442;&#x430;&#x43b;&#x43e;&#x4
+0580: 33; &#x43c;&#x435;&#x441;&#x442;.">..........</a></li><li><a hre
+05c0: f="/marketplace/" t
+16:25:57.671000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.671000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.671000 <= Recv data, 1500 bytes (0x5dc)
+0000: itle="&#x41f;&#x43e;&#x43a;&#x443;&#x43f;&#x430;&#x439;&#x442;&#
+0040: x435; &#x438; &#x43f;&#x440;&#x43e;&#x434;&#x430;&#x432;&#x430;&
+0080: #x439;&#x442;&#x435; &#x447;&#x435;&#x440;&#x435;&#x437; Faceboo
+00c0: k Marketplace.">Marketplace</a></li><li><a href="/directory/grou
+0100: ps/" title="&#x41f;&#x440;&#x43e;&#x441;&#x43c;&#x43e;&#x442;&#x
+0140: 440;&#x435;&#x442;&#x44c; &#x43d;&#x430;&#x448; &#x43a;&#x430;&#
+0180: x442;&#x430;&#x43b;&#x43e;&#x433; &#x433;&#x440;&#x443;&#x43f;&#
+01c0: x43f;.">............</a></li><li><a href="https://l.facebook.com
+0200: /l.php?u=https%3A%2F%2Finstagram.com%2F&amp;h=AT1WwJmDt4czoL2515
+0240: -Vdo_ybQ9PQ3dRgc-Kr7Ql46jZgFK3bcyr3_YC4D8usvR0MiSJ_utheKiBq_V5iC
+0280: iBfyb4LjwMdNzmKEKCREbtXoXecwpvV378HHJ1Oj0BYncgm5SFxweRtox3xPrY" 
+02c0: title="&#x41f;&#x43e;&#x43f;&#x440;&#x43e;&#x431;&#x443;&#x439;&
+0300: #x442;&#x435; Instagram" target="_blank" rel="nofollow" data-lyn
+0340: x-mode="hover">Instagram</a></li><li><a href="/local/lists/24501
+0380: 9872666104/" title="&#x41f;&#x440;&#x43e;&#x441;&#x43c;&#x43e;&#
+03c0: x442;&#x440;&#x435;&#x442;&#x44c; &#x43d;&#x430;&#x448; &#x43a;&
+0400: #x430;&#x442;&#x430;&#x43b;&#x43e;&#x433; &quot;&#x41c;&#x435;&#
+0440: x441;&#x442;&#x43d;&#x44b;&#x435; &#x441;&#x43f;&#x438;&#x441;&#
+0480: x43a;&#x438;&quot;.">..............</a></li><li><a href="/fundra
+04c0: isers/" title="&#x41f;&#x43e;&#x436;&#x435;&#x440;&#x442;&#x432;
+0500: &#x43e;&#x432;&#x430;&#x442;&#x44c; &#x432; &#x43f;&#x43e;&#x434
+0540: ;&#x434;&#x435;&#x440;&#x436;&#x43a;&#x443; &#x43e;&#x431;&#x449
+0580: ;&#x435;&#x441;&#x442;&#x432;&#x435;&#x43d;&#x43d;&#x43e; &#x437
+05c0: ;&#x43d;&#x430;&#x447;&#x438
+16:25:57.687000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.687000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.687000 <= Recv data, 1500 bytes (0x5dc)
+0000: ;&#x43c;&#x44b;&#x445; &#x434;&#x435;&#x43b;">..................
+0040: ................ ..........</a></li><li><a href="/biz/directory/
+0080: " title="&#x41f;&#x43e;&#x441;&#x43c;&#x43e;&#x442;&#x440;&#x435
+00c0: ;&#x442;&#x44c; &#x43d;&#x430;&#x448; &#x43a;&#x430;&#x442;&#x43
+0100: 0;&#x43b;&#x43e;&#x433; &quot;&#x421;&#x435;&#x440;&#x432;&#x438
+0140: ;&#x441;&#x44b; Facebook&quot;.">............</a></li><li><a hre
+0180: f="/facebook" accesskey="8" title="&#x41f;&#x440;&#x43e;&#x447;&
+01c0: #x442;&#x438;&#x442;&#x435; &#x43d;&#x430;&#x448; &#x431;&#x43b;
+0200: &#x43e;&#x433;, &#x43e;&#x437;&#x43d;&#x430;&#x43a;&#x43e;&#x43c
+0240: ;&#x44c;&#x442;&#x435;&#x441;&#x44c; &#x441; &#x43c;&#x430;&#x44
+0280: 2;&#x435;&#x440;&#x438;&#x430;&#x43b;&#x430;&#x43c;&#x438;, &#x4
+02c0: 3d;&#x430;&#x439;&#x434;&#x438;&#x442;&#x435;  &#x432;&#x430;&#x
+0300: 43a;&#x430;&#x43d;&#x441;&#x438;&#x438;.">.. ......</a></li><li>
+0340: <a href="/ad_campaign/landing.php?placement=pflo&amp;campaign_id
+0380: =402047449186&amp;extra_1=auto" title="&#x420;&#x435;&#x43a;&#x4
+03c0: 3b;&#x430;&#x43c;&#x430; &#x43d;&#x430;  Facebook.">............
+0400: .. ..............</a></li><li><a href="/pages/create/?ref_type=s
+0440: ite_footer" title="&#x421;&#x43e;&#x437;&#x434;&#x430;&#x442;&#x
+0480: 44c; &#x421;&#x442;&#x440;&#x430;&#x43d;&#x438;&#x446;&#x443;">.
+04c0: ............. ................</a></li><li><a href="https://deve
+0500: lopers.facebook.com/?ref=pf" title="&#x420;&#x430;&#x437;&#x432;
+0540: &#x438;&#x432;&#x430;&#x439;&#x442;&#x435;&#x441;&#x44c; &#x43d;
+0580: &#x430; &#x43d;&#x430;&#x448;&#x435;&#x439; &#x43f;&#x43b;&#x430
+05c0: ;&#x442;&#x444;&#x43e;&#x440
+16:25:57.687000 <= Recv SSL data, 5 bytes (0x5)
+0000: ....#
+16:25:57.687000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.687000 <= Recv data, 530 bytes (0x212)
+0000: ;&#x43c;&#x435;.">..........................</a></li><li><a href
+0040: ="/careers/?ref=pf" title="&#x421;&#x434;&#x435;&#x43b;&#x430;&#
+0080: x439;&#x442;&#x435; &#x441;&#x43b;&#x435;&#x434;&#x443;&#x44e;&#
+00c0: x449;&#x438;&#x439; &#x448;&#x430;&#x433; &#x432; &#x43a;&#x430;
+0100: &#x440;&#x44c;&#x435;&#x440;&#x435; &#x432; &#x43d;&#x430;&#x448
+0140: ;&#x435;&#x439; &#x43e;&#x442;&#x43b;&#x438;&#x447;&#x43d;&#x43e
+0180: ;&#x439; &#x43a;&#x43e;&#x43c;&#x43f;&#x430;&#x43d;&#x438;&#x438
+01c0: ;.">................</a></li><li><a data-nocookies="1" href="/pr
+0200: ivacy/explanation"
+16:25:57.687000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.687000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.687000 <= Recv data, 1491 bytes (0x5d3)
+0000:  title="&#x423;&#x437;&#x43d;&#x430;&#x439;&#x442;&#x435; &#x43e
+0040: ; &#x441;&#x432;&#x43e;&#x435;&#x439; &#x43a;&#x43e;&#x43d;&#x44
+0080: 4;&#x438;&#x434;&#x435;&#x43d;&#x446;&#x438;&#x430;&#x43b;&#x44c
+00c0: ;&#x43d;&#x43e;&#x441;&#x442;&#x438; &#x43d;&#x430; Facebook.">.
+0100: ...................................</a></li><li><a href="/polici
+0140: es/cookies/" title="&#x423;&#x437;&#x43d;&#x430;&#x439;&#x442;&#
+0180: x435; &#x431;&#x43e;&#x43b;&#x44c;&#x448;&#x435; &#x43e; cookies
+01c0:  &#x438; Facebook." data-nocookies="1">.......... cookie</a></li
+0200: ><li><a class="_41ug" data-nocookies="1" href="https://www.faceb
+0240: ook.com/help/568137493302217" title="&#x41f;&#x43e;&#x434;&#x440
+0280: ;&#x43e;&#x431;&#x43d;&#x435;&#x435; &#x43e; &#x432;&#x44b;&#x43
+02c0: 1;&#x43e;&#x440;&#x435; &#x440;&#x435;&#x43a;&#x43b;&#x430;&#x43
+0300: c;&#x44b;.">.......... ..............<i class="img sp_JNHxKjoBJY
+0340: S sx_e51855"></i></a></li><li><a data-nocookies="1" href="/polic
+0380: ies?ref=pf" accesskey="9" title="&#x41f;&#x440;&#x43e;&#x441;&#x
+03c0: 43c;&#x43e;&#x442;&#x440;&#x438;&#x442;&#x435; &#x43d;&#x430;&#x
+0400: 448;&#x438; &#x443;&#x441;&#x43b;&#x43e;&#x432;&#x438;&#x44f; &#
+0440: x438; &#x43f;&#x440;&#x430;&#x432;&#x438;&#x43b;&#x430;.">......
+0480: ........ ..........................</a></li><li><a href="/help/?
+04c0: ref=pf" accesskey="0" title="&#x41f;&#x43e;&#x441;&#x435;&#x442;
+0500: &#x438;&#x442;&#x435; &#x43d;&#x430;&#x448; &#x421;&#x43f;&#x440
+0540: ;&#x430;&#x432;&#x43e;&#x447;&#x43d;&#x44b;&#x439; &#x446;&#x435
+0580: ;&#x43d;&#x442;&#x440;.">..............</a></li><li><a accesskey
+05c0: ="6" class="accessi
+16:25:57.703000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.703000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.703000 <= Recv data, 1500 bytes (0x5dc)
+0000: ble_elem" href="/settings" title="&#x41f;&#x43e;&#x441;&#x43c;&#
+0040: x43e;&#x442;&#x440;&#x435;&#x442;&#x44c; &#x438; &#x43e;&#x442;&
+0080: #x440;&#x435;&#x434;&#x430;&#x43a;&#x442;&#x438;&#x440;&#x43e;&#
+00c0: x432;&#x430;&#x442;&#x44c; &#x43d;&#x430;&#x441;&#x442;&#x440;&#
+0100: x43e;&#x439;&#x43a;&#x438; Facebook.">..................</a></li
+0140: ><li><a accesskey="7" class="accessible_elem" href="/allactivity
+0180: ?privacy_source=activity_log_top_menu" title="&#x41f;&#x43e;&#x4
+01c0: 41;&#x43c;&#x43e;&#x442;&#x440;&#x435;&#x442;&#x44c; &#x416;&#x4
+0200: 43;&#x440;&#x43d;&#x430;&#x43b; &#x434;&#x435;&#x439;&#x441;&#x4
+0240: 42;&#x432;&#x438;&#x439;">............ ................</a></li>
+0280: </ul></div><div class="mvl copyright"><div><span> Facebook .. 20
+02c0: 20</span></div></div></div></div></div><div></div><span><img src
+0300: ="https://facebook.com/security/hsts-pixel.gif?c=3.2.5" width="0
+0340: " height="0" style="display:none" /></span></div><div style="dis
+0380: play:none"></div>.<script>requireLazy(["gkx"],function(gkx){gkx.
+03c0: add({"677762":{"result":true,"hash":"AT5kVzQUftyHeo80"},"1243461
+0400: ":{"result":false,"hash":"AT5-oSIywKwO5yfU"},"729629":{"result":
+0440: false,"hash":"AT7hXRLNm_x2Gv_I"},"729630":{"result":false,"hash"
+0480: :"AT5oftL0KpFvdhQX"},"729631":{"result":false,"hash":"AT74RnNlin
+04c0: _sZ6JI"},"1130462":{"result":true,"hash":"AT73U4G_P_opbNoj"},"12
+0500: 20350":{"result":true,"hash":"AT6S0OwrVLUWi_lJ"},"819236":{"resu
+0540: lt":false,"hash":"AT5ajDKxCvgc-Jl7"},"925108":{"result":false,"h
+0580: ash":"AT4_YBCXbKas8kUM"},"1029033":{"result":false,"hash":"AT6Rz
+05c0: XjXEs1me-QY"},"1099893":{"re
+16:25:57.703000 <= Recv SSL data, 5 bytes (0x5)
+0000: ....r
+16:25:57.703000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.703000 <= Recv data, 1377 bytes (0x561)
+0000: sult":false,"hash":"AT4ZxltIihXs3_Kj"}});});.requireLazy(["Bootl
+0040: oader"],function(Bootloader){Bootloader.setResourceMap({"z6vKv":
+0080: {"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i
+00c0: EQZ4\/yg\/l\/ru!RU\/QSk1d5yCrMM.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"W
+0100: twvR":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.ph
+0140: p\/v3\/y8\/r\/rzkznP_FiLk.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Qf9LR":
+0180: {"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i
+01c0: EO44\/yh\/l\/ru!RU\/IrSFMDpePFK.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"b
+0200: wmjB":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.ph
+0240: p\/v3iJWF4\/yo\/l\/ru!RU\/nSXoMfifukl.js?_nc_x=Ij3Wp8lg5Kz","nc"
+0280: :1},"VQGza":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/r
+02c0: src.php\/v3\/yC\/r\/qdcqC1ObX1a.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"W
+0300: x0D\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.p
+0340: hp\/v3\/yZ\/r\/zqGJqPP3_oZ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Az4yj"
+0380: :{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3
+03c0: \/yM\/r\/SWTBLMcEy6m.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"kClfO":{"typ
+0400: e":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iGCv4\
+0440: /yV\/l\/ru!RU\/eAJ_x9iUVyr.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"lMnZU"
+0480: :{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3
+04c0: ipHW4\/yC\/l\/ru!RU\/FVOCLxujl5P.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"
+0500: 6il\/R":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.
+0540: php\/v3i_P84\/yj\/l\/ru!RU\/dMkeu
+16:25:57.703000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.703000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.703000 <= Recv data, 1491 bytes (0x5d3)
+0000: 5qHis5.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"2\/maQ":{"type":"js","src"
+0040: :"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y6\/r\/O1evg4NvCz
+0080: K.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"rVlmW":{"type":"js","src":"http
+00c0: s:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iERv4\/y8\/l\/ru!RU\/wQHl
+0100: 4_4B8Ji.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"NPu7r":{"type":"js","src"
+0140: :"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y0\/r\/ej7LOl_0F1
+0180: v.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/mnVq":{"type":"js","src":"htt
+01c0: ps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iGAg4\/yB\/l\/ru!RU\/0oF
+0200: MraF1OH3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"odIyj":{"type":"js","src
+0240: ":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yM\/r\/4DYH605R_
+0280: 2C.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"MAezy":{"type":"js","src":"htt
+02c0: ps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i2mC4\/yI\/l\/ru!RU\/2gk
+0300: m5Gs7ZIh.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ISTT9":{"type":"js","src
+0340: ":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iZ-u4\/yV\/l\/ru!R
+0380: U\/M0k_94jz2eQ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"kVibh":{"type":"js
+03c0: ","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yG\/r\/LSi
+0400: aY7hjnAt.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"GUPZ3":{"type":"js","src
+0440: ":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y1\/r\/5C67BVLZl
+0480: kk.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"+868\/":{"type":"js","src":"ht
+04c0: tps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iOaY4\/yO\/l\/ru!RU\/gh
+0500: ENzE51Vko.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"aro4L":{"type":"css","s
+0540: rc":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y6\/l\/0,cross
+0580: \/AM2E_sJiI_x.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"dJuhX":{"type":"js
+05c0: ","src":"https:\/\/
+16:25:57.703000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.703000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.703000 <= Recv data, 1500 bytes (0x5dc)
+0000: static.xx.fbcdn.net\/rsrc.php\/v3idFa4\/y2\/l\/ru!RU\/f_EVBhnEcc
+0040: A.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"6w8Dx":{"type":"js","src":"http
+0080: s:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y5\/r\/0FECeneUmUf.js?_
+00c0: nc_x=Ij3Wp8lg5Kz","nc":1},"I61f8":{"type":"js","src":"https:\/\/
+0100: static.xx.fbcdn.net\/rsrc.php\/v3\/yJ\/r\/H4WygzDAtEQ.js?_nc_x=I
+0140: j3Wp8lg5Kz","nc":1},"r21mj":{"type":"js","src":"https:\/\/static
+0180: .xx.fbcdn.net\/rsrc.php\/v3iJ__4\/yM\/l\/ru!RU\/vToC6-oEc9l.js?_
+01c0: nc_x=Ij3Wp8lg5Kz","nc":1},"lhAFM":{"type":"js","src":"https:\/\/
+0200: static.xx.fbcdn.net\/rsrc.php\/v3iYr14\/y9\/l\/ru!RU\/yEhy3t2eGG
+0240: v.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TWSlK":{"type":"js","src":"http
+0280: s:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ib6a4\/yF\/l\/ru!RU\/ud8O
+02c0: idc9Tnt.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"dQJHN":{"type":"js","src"
+0300: :"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iFWM4\/yL\/l\/ru!RU
+0340: \/ey8sLIGoXZJ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"AP7eF":{"type":"js"
+0380: ,"src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3igjK4\/yx\/l\
+03c0: /ru!RU\/-qeGgP1zxuV.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"hU8OK":{"type
+0400: ":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yk\/
+0440: l\/0,cross\/lTngwTsHwX3.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"m1K6g":{
+0480: "type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/
+04c0: yn\/r\/ckaKp-YcG9D.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"o\/PxR":{"type
+0500: ":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iYAj4\/
+0540: yA\/l\/ru!RU\/HOiObQ6WPs0.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"YWSR0":
+0580: {"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3
+05c0: \/yv\/l\/0,cross\/HZmGh0AfYW
+16:25:57.718000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.718000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.718000 <= Recv data, 1500 bytes (0x5dc)
+0000: h.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"TeH3a":{"type":"js","src":"htt
+0040: ps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yE\/r\/4R7n4Ym2ZWD.js?
+0080: _nc_x=Ij3Wp8lg5Kz","nc":1},"TZhF+":{"type":"css","src":"https:\/
+00c0: \/static.xx.fbcdn.net\/rsrc.php\/v3\/yH\/l\/0,cross\/HrzlK9t8Luk
+0100: .css?_nc_x=Ij3Wp8lg5Kz","nc":1},"oVSmY":{"type":"js","src":"http
+0140: s:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ishb4\/yP\/l\/ru!RU\/uhzR
+0180: V3eWYRI.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"EY9ij":{"type":"js","src"
+01c0: :"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i8594\/y3\/l\/ru!RU
+0200: \/Ax2BeeIUZn3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Wsah6":{"type":"js"
+0240: ,"src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iZof4\/y3\/l\
+0280: /ru!RU\/shLG8kpiUUT.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"np5Vl":{"type
+02c0: ":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/r
+0300: \/cAwlKIH9oOW.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/5DSF":{"type":"js
+0340: ","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iFmX4\/y4\/l
+0380: \/ru!RU\/4RRPfWa8ax4.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"tsJR+":{"typ
+03c0: e":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iEGR4\
+0400: /yK\/l\/ru!RU\/f7iSGFImJkl.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"E6LdN"
+0440: :{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3
+0480: i8C14\/yn\/l\/ru!RU\/PQrZdyqMMNX.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"
+04c0: t3HlG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.p
+0500: hp\/v3\/yK\/r\/yPznrtii0fE.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"OJmyI"
+0540: :{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3
+0580: ip8G4\/y8\/l\/ru!RU\/onpZdMnYnmx.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"
+05c0: 55b2Y":{"type":"js","src":"h
+16:25:57.718000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.718000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.718000 <= Recv data, 1500 bytes (0x5dc)
+0000: ttps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iCdQ4\/yd\/l\/ru!RU\/Q
+0040: WHMT26yt7j.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"21Oct":{"type":"js","s
+0080: rc":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iPr-4\/yN\/l\/ru
+00c0: !RU\/Z7yN7EoP5UX.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"drXVH":{"type":"
+0100: js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y-\/r\/d
+0140: uh3DvPqcRj.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"xSs1v":{"type":"js","s
+0180: rc":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yD\/r\/ndUwyoc
+01c0: 6daa.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"PhrVO":{"type":"js","src":"h
+0200: ttps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yV\/r\/xy9XntcSbZE.j
+0240: s?_nc_x=Ij3Wp8lg5Kz","nc":1},"ZakcT":{"type":"js","src":"https:\
+0280: /\/static.xx.fbcdn.net\/rsrc.php\/v3ijNW4\/yh\/l\/ru!RU\/HSiwKLh
+02c0: KgTy.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"JAP3g":{"type":"css","src":"
+0300: https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yZ\/l\/0,cross\/sYh
+0340: uCbcD1LV.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"y9jPx":{"type":"css","s
+0380: rc":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yV\/l\/0,cross
+03c0: \/do_ntr1T3rt.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"MuxC8":{"type":"js
+0400: ","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i2Pa4\/yn\/l
+0440: \/ru!RU\/UR07C9f6YtO.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"rYGmq":{"typ
+0480: e":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yW\/
+04c0: r\/-LwBHbUUpg9.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"FL8+u":{"type":"cs
+0500: s","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ys\/l\/0,
+0540: cross\/TfbKuYeMsSB.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"Rkigw":{"type
+0580: ":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iZbz4\/
+05c0: yl\/l\/ru!RU\/5L40cKtHqi9.js
+16:25:57.718000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.718000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.718000 <= Recv data, 163 bytes (0xa3)
+0000: ?_nc_x=Ij3Wp8lg5Kz","nc":1},"aF9iP":{"type":"js","src":"https:\/
+0040: \/static.xx.fbcdn.net\/rsrc.php\/v3i_P84\/yn\/l\/ru!RU\/PKalrNya
+0080: mlU.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"
+16:25:57.718000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.718000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.718000 <= Recv data, 1491 bytes (0x5d3)
+0000: wMVm7":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.p
+0040: hp\/v3\/yN\/r\/VPw-RvK7Xg_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"oDXHK"
+0080: :{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3
+00c0: ijki4\/yR\/l\/ru!RU\/xGwrE2y2WNi.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"
+0100: 4yWfR":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.p
+0140: hp\/v3i9HD4\/yb\/l\/ru!RU\/O5GBqPOHAxE.js?_nc_x=Ij3Wp8lg5Kz","nc
+0180: ":1},"tBF0I":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\
+01c0: /rsrc.php\/v3\/yU\/l\/0,cross\/GYNkTexcFMg.css?_nc_x=Ij3Wp8lg5Kz
+0200: ","nc":1},"j\/bvf":{"type":"js","src":"https:\/\/static.xx.fbcdn
+0240: .net\/rsrc.php\/v3i3lH4\/yv\/l\/ru!RU\/r4Dkqi7S-W-.js?_nc_x=Ij3W
+0280: p8lg5Kz","nc":1},"WxEN1":{"type":"css","src":"https:\/\/static.x
+02c0: x.fbcdn.net\/rsrc.php\/v3\/yp\/l\/0,cross\/rPm4Fk9Yefc.css?_nc_x
+0300: =Ij3Wp8lg5Kz","nc":1},"liORJ":{"type":"js","src":"https:\/\/stat
+0340: ic.xx.fbcdn.net\/rsrc.php\/v3\/yi\/r\/AnOu4prKY5b.js?_nc_x=Ij3Wp
+0380: 8lg5Kz","nc":1},"8Qssl":{"type":"js","src":"https:\/\/static.xx.
+03c0: fbcdn.net\/rsrc.php\/v3ivpC4\/yV\/l\/ru!RU\/GFnSs9G2ZzA.js?_nc_x
+0400: =Ij3Wp8lg5Kz","nc":1},"fD7jU":{"type":"js","src":"https:\/\/stat
+0440: ic.xx.fbcdn.net\/rsrc.php\/v3iEXK4\/yD\/l\/ru!RU\/CcE0_gyhvjq.js
+0480: ?_nc_x=Ij3Wp8lg5Kz","nc":1},"wjdcl":{"type":"js","src":"https:\/
+04c0: \/static.xx.fbcdn.net\/rsrc.php\/v3il5S4\/yW\/l\/ru!RU\/GlT_xStV
+0500: NQT.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"D3dq1":{"type":"css","src":"h
+0540: ttps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y6\/l\/0,cross\/cmAI
+0580: 4sX8_Oq.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"SI04t":{"type":"js","src
+05c0: ":"https:\/\/static
+16:25:57.734000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.734000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.734000 <= Recv data, 1500 bytes (0x5dc)
+0000: .xx.fbcdn.net\/rsrc.php\/v3iPMh4\/yV\/l\/ru!RU\/P3wvj2ZPnaK.js?_
+0040: nc_x=Ij3Wp8lg5Kz","nc":1},"6h0B\/":{"type":"css","src":"https:\/
+0080: \/static.xx.fbcdn.net\/rsrc.php\/v3\/y1\/l\/0,cross\/uILAy8MZBFQ
+00c0: .css?_nc_x=Ij3Wp8lg5Kz","nc":1},"5ThQo":{"type":"css","src":"htt
+0100: ps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yy\/l\/0,cross\/fAjLC8
+0140: oMeB7.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"mNHl5":{"type":"js","src":
+0180: "https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yD\/r\/jmstqFKOcY_
+01c0: .js?_nc_x=Ij3Wp8lg5Kz","nc":1},"9goRg":{"type":"js","src":"https
+0200: :\/\/static.xx.fbcdn.net\/rsrc.php\/v3iR2S4\/yW\/l\/ru!RU\/u8T4O
+0240: TNqDl9.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"SO4R1":{"type":"js","src":
+0280: "https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yS\/r\/vBmUXJqvD9x
+02c0: .js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4VuTu":{"type":"js","src":"https
+0300: :\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yp\/r\/IfXYouHkgaI.js?_n
+0340: c_x=Ij3Wp8lg5Kz","nc":1},"\/DutO":{"type":"js","src":"https:\/\/
+0380: static.xx.fbcdn.net\/rsrc.php\/v3iJzO4\/yP\/l\/ru!RU\/_kr8htR68J
+03c0: y.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"H8VSa":{"type":"js","src":"http
+0400: s:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iQNL4\/yn\/l\/ru!RU\/VP4j
+0440: LmGCZDd.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"YxP+D":{"type":"js","src"
+0480: :"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iknQ4\/yj\/l\/ru!RU
+04c0: \/0tTMPiOWr75.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"eKUNz":{"type":"js"
+0500: ,"src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iq9q4\/yN\/l\
+0540: /ru!RU\/sP8F5V-u--U.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"8R91k":{"type
+0580: ":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i1MJ4\/
+05c0: y5\/l\/ru!RU\/lq9ZfP_zRRl.js
+16:25:57.734000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.734000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.734000 <= Recv data, 1500 bytes (0x5dc)
+0000: ?_nc_x=Ij3Wp8lg5Kz","nc":1},"Mr7pE":{"type":"css","src":"https:\
+0040: /\/static.xx.fbcdn.net\/rsrc.php\/v3\/y-\/l\/0,cross\/fkq3wGMSz7
+0080: z.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"tQdbH":{"type":"js","src":"htt
+00c0: ps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i50C4\/y_\/l\/ru!RU\/v6w
+0100: zgysS-fC.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"K93fT":{"type":"js","src
+0140: ":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yd\/r\/Q8VyDzLOh
+0180: Tx.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"+gl3U":{"type":"js","src":"htt
+01c0: ps:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iug54\/yH\/l\/ru!RU\/sVI
+0200: 1jyvofbn.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TeAXM":{"type":"js","src
+0240: ":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iR4S4\/yU\/l\/ru!R
+0280: U\/hQezQl8qgic.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Aj\/fW":{"type":"j
+02c0: s","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i_P84\/yJ\/
+0300: l\/ru!RU\/EegMENcLvWR.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"u0hV9":{"ty
+0340: pe":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iRol4
+0380: \/y3\/l\/ru!RU\/ncrKfUnZD0R.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"eijSA
+03c0: ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v
+0400: 3\/yL\/r\/NmOO4fYblVI.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"E8Gb9":{"ty
+0440: pe":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iLPG4
+0480: \/ym\/l\/ru!RU\/Jlm9lD5lelj.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"3T3Gq
+04c0: ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v
+0500: 3ifZb4\/yy\/l\/ru!RU\/qympBtgFSVo.js?_nc_x=Ij3Wp8lg5Kz","nc":1},
+0540: "zTywF":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.
+0580: php\/v3iQyr4\/yT\/l\/ru!RU\/aHQe7vvirjK.js?_nc_x=Ij3Wp8lg5Kz","n
+05c0: c":1},"ZkyKi":{"type":"js","
+16:25:57.734000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.734000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.734000 <= Recv data, 1500 bytes (0x5dc)
+0000: src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yI\/r\/pHxeo9
+0040: UYGZh.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"gWMJg":{"type":"js","src":"
+0080: https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yH\/r\/iGksp69foR_.
+00c0: js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ZU1ro":{"type":"js","src":"https:
+0100: \/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yU\/r\/QKWIqWeZBgJ.js?_nc
+0140: _x=Ij3Wp8lg5Kz","nc":1},"VyLYP":{"type":"js","src":"https:\/\/st
+0180: atic.xx.fbcdn.net\/rsrc.php\/v3\/y1\/r\/OMmiZCRh5Fc.js?_nc_x=Ij3
+01c0: Wp8lg5Kz","nc":1},"VMKqM":{"type":"js","src":"https:\/\/static.x
+0200: x.fbcdn.net\/rsrc.php\/v3\/yr\/r\/c-C32MOXUtw.js?_nc_x=Ij3Wp8lg5
+0240: Kz","nc":1},"0Ufki":{"type":"js","src":"https:\/\/static.xx.fbcd
+0280: n.net\/rsrc.php\/v3i_2M4\/yB\/l\/ru!RU\/QpAvwF9QoN_.js?_nc_x=Ij3
+02c0: Wp8lg5Kz","nc":1},"wpdxo":{"type":"js","src":"https:\/\/static.x
+0300: x.fbcdn.net\/rsrc.php\/v3ijjL4\/yF\/l\/ru!RU\/pcVaUfD4ASV.js?_nc
+0340: _x=Ij3Wp8lg5Kz","nc":1},"Uv1sj":{"type":"js","src":"https:\/\/st
+0380: atic.xx.fbcdn.net\/rsrc.php\/v3i-r54\/ys\/l\/ru!RU\/0KfczwQNa7p.
+03c0: js?_nc_x=Ij3Wp8lg5Kz","nc":1},"8ELCB":{"type":"js","src":"https:
+0400: \/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/r\/4c56_sYLseJ.js?_nc
+0440: _x=Ij3Wp8lg5Kz","nc":1},"+ClWy":{"type":"js","src":"https:\/\/st
+0480: atic.xx.fbcdn.net\/rsrc.php\/v3\/y_\/r\/HBJ1fqH-E0d.js?_nc_x=Ij3
+04c0: Wp8lg5Kz","nc":1},"0lLrn":{"type":"js","src":"https:\/\/static.x
+0500: x.fbcdn.net\/rsrc.php\/v3\/yw\/r\/vgooVJBbaAh.js?_nc_x=Ij3Wp8lg5
+0540: Kz","nc":1},"oE4Do":{"type":"js","src":"https:\/\/static.xx.fbcd
+0580: n.net\/rsrc.php\/v3\/y2\/r\/eAdKAwutbmm.js?_nc_x=Ij3Wp8lg5Kz","n
+05c0: c":1},"dLK1Z":{"type":"js","
+16:25:57.734000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.734000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.734000 <= Recv data, 160 bytes (0xa0)
+0000: src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yZ\/r\/21TISg
+0040: UYo8s.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"P\/mr5":{"type":"css","src"
+0080: :"data:text\/css; charset=utf-8;
+16:25:57.734000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.734000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.734000 <= Recv data, 1491 bytes (0x5d3)
+0000: base64,I2Jvb3Rsb2FkZXJfUF9tcjV7aGVpZ2h0OjQycHg7fS5ib290bG9hZGVyX
+0040: 1BfbXI1e2Rpc3BsYXk6YmxvY2shaW1wb3J0YW50O30=","nc":1,"d":1}}, [])
+0080: ;Bootloader.enableBootload({"BanzaiODS":{"r":["z6vKv"],"rds":{"m
+00c0: ":["BanzaiODS","BanzaiScuba"]}},"BanzaiScuba":{"r":["z6vKv"],"rd
+0100: s":{"m":["BanzaiODS","BanzaiScuba"]}},"VisualCompletionGating":{
+0140: "r":["WtwvR"]},"Dock":{"r":["WtwvR","Qf9LR","bwmjB","z6vKv","9DW
+0180: D2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"TimeSliceI
+01c0: nteractionsLiteTypedLogger":{"r":["VQGza","z6vKv"],"rds":{"m":["
+0200: BanzaiODS","BanzaiScuba"]},"be":1},"WebSpeedInteractionsTypedLog
+0240: ger":{"r":["z6vKv","Wx0D\/"],"rds":{"m":["BanzaiODS","BanzaiScub
+0280: a"]},"be":1},"AsyncRequest":{"r":["Az4yj","z6vKv","9DWD2"],"rds"
+02c0: :{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"DOM":{"r":["z6vKv","
+0300: 9DWD2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"Form":{
+0340: "r":["z6vKv","9DWD2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"b
+0380: e":1},"FormSubmit":{"r":["kClfO","Az4yj","z6vKv","9DWD2"],"rds":
+03c0: {"m":["BanzaiODS","BanzaiScuba"]},"be":1},"Input":{"r":["z6vKv"]
+0400: ,"be":1},"Live":{"r":["lMnZU","6il\/R","z6vKv","2\/maQ","9DWD2"]
+0440: ,"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"Toggler":{"r":
+0480: ["Qf9LR","z6vKv","9DWD2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]
+04c0: },"be":1},"Tooltip":{"r":["Qf9LR","Az4yj","rVlmW","6il\/R","z6vK
+0500: v","9DWD2","NPu7r"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be"
+0540: :1},"URI":{"r":[],"be":1},"trackReferrer":{"r":[],"rds":{"m":["B
+0580: anzaiODS","BanzaiScuba"],"r":["z6vKv"]},"be":1},"PhotoTagApprova
+05c0: l":{"r":["\/mnVq","
+16:25:57.750000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.750000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.750000 <= Recv data, 1500 bytes (0x5dc)
+0000: z6vKv","odIyj","9DWD2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},
+0040: "be":1},"PhotoSnowlift":{"r":["MAezy","6KFqn","ISTT9","kVibh","W
+0080: twvR","GUPZ3","+868\/","aro4L","dJuhX","6w8Dx","I61f8","r21mj","
+00c0: lhAFM","Qf9LR","Az4yj","TWSlK","rVlmW","dQJHN","6il\/R","AP7eF",
+0100: "hU8OK","m1K6g","z6vKv","o\/PxR","9DWD2","YWSR0","TeH3a","odIyj"
+0140: ,"TZhF+","oVSmY","EY9ij","Wsah6","np5Vl","\/5DSF","tsJR+","NPu7r
+0180: ","E6LdN"],"rds":{"m":["BanzaiODS","BanzaiScuba","VisualCompleti
+01c0: onGating"]},"be":1},"PhotoTagger":{"r":["t3HlG","OJmyI","6KFqn",
+0200: "55b2Y","21Oct","ISTT9","kVibh","drXVH","WtwvR","+868\/","xSs1v"
+0240: ,"6w8Dx","PhrVO","r21mj","ZakcT","JAP3g","y9jPx","Qf9LR","Az4yj"
+0280: ,"TWSlK","MuxC8","rYGmq","FL8+u","Rkigw","aF9iP","wMVm7","oDXHK"
+02c0: ,"4yWfR","6il\/R","tBF0I","j\/bvf","AP7eF","WxEN1","liORJ","8Qss
+0300: l","fD7jU","wjdcl","D3dq1","z6vKv","bN9rs","9DWD2","SI04t","6h0B
+0340: \/","TeH3a","5ThQo","odIyj","oVSmY","EY9ij","mNHl5","9goRg","SO4
+0380: R1","4VuTu","\/DutO","\/5DSF","tsJR+","NPu7r","E6LdN","np5Vl","H
+03c0: 8VSa","rVlmW"],"rdfds":{"m":["GamesVideoDeleteCommentDialog.reac
+0400: t","GamesVideoModerationRulesNux.react","GamesVideoCommentRemove
+0440: dDialog.react"],"r":["YxP+D","eKUNz","8R91k","Mr7pE","tQdbH","K9
+0480: 3fT","+gl3U","m1K6g","TeAXM","Aj\/fW","u0hV9"]},"rds":{"m":["Pre
+04c0: senceStatus","BanzaiODS","BanzaiScuba","Banzai","WebDevicePerfIn
+0500: foLogging"],"r":["lMnZU"]},"be":1},"PhotoTags":{"r":["\/mnVq","z
+0540: 6vKv","odIyj","9DWD2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"
+0580: be":1},"TagTokenizer":{"r":["6KFqn","+868\/","eijSA","Az4yj","E8
+05c0: Gb9","\/mnVq","z6vKv","bN9rs
+16:25:57.750000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.750000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.750000 <= Recv data, 1500 bytes (0x5dc)
+0000: ","9DWD2","3T3Gq"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":
+0040: 1},"AsyncDialog":{"r":["Qf9LR","Az4yj","z6vKv","9DWD2","NPu7r"],
+0080: "rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"Hovercard":{"r"
+00c0: :["+868\/","Qf9LR","Az4yj","aF9iP","wMVm7","6il\/R","WxEN1","wjd
+0100: cl","z6vKv","9DWD2","NPu7r"],"rds":{"m":["BanzaiODS","BanzaiScub
+0140: a"]},"be":1},"Banzai":{"r":["z6vKv"],"rds":{"m":["BanzaiODS","Ba
+0180: nzaiScuba"]},"be":1},"ResourceTimingBootloaderHelper":{"r":["zTy
+01c0: wF","z6vKv"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"Ti
+0200: meSliceHelper":{"r":["ZkyKi"],"be":1},"XSalesPromoWWWDetailsDial
+0240: ogAsyncController":{"r":["gWMJg"],"be":1},"BanzaiStream":{"r":["
+0280: ZU1ro","z6vKv"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},
+02c0: "SnappyCompressUtil":{"r":["z6vKv"],"be":1},"XOfferController":{
+0300: "r":["VyLYP"],"be":1},"PerfXSharedFields":{"r":["6il\/R"],"be":1
+0340: },"KeyEventTypedLogger":{"r":["VMKqM","z6vKv"],"rds":{"m":["Banz
+0380: aiODS","BanzaiScuba"]},"be":1},"Animation":{"r":["Qf9LR","6il\/R
+03c0: ","z6vKv","9DWD2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":
+0400: 1},"Dialog":{"r":["6KFqn","WtwvR","Qf9LR","Az4yj","6il\/R","z6vK
+0440: v","9DWD2","tsJR+","kVibh","E6LdN","np5Vl","NPu7r"],"rds":{"m":[
+0480: "BanzaiODS","BanzaiScuba"]},"be":1},"ExceptionDialog":{"r":["Wtw
+04c0: vR","Qf9LR","Az4yj","wpdxo","Uv1sj","AP7eF","fD7jU","z6vKv","9DW
+0500: D2","NPu7r"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"Re
+0540: actDOM":{"r":["z6vKv","NPu7r","9DWD2"],"rds":{"m":["BanzaiODS","
+0580: BanzaiScuba"]},"be":1},"QuickSandSolver":{"r":["Az4yj","8ELCB","
+05c0: +ClWy","z6vKv","0lLrn","9DWD
+16:25:57.750000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.750000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.750000 <= Recv data, 697 bytes (0x2b9)
+0000: 2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"Confirmatio
+0040: nDialog":{"r":["oE4Do","z6vKv","9DWD2"],"rds":{"m":["BanzaiODS",
+0080: "BanzaiScuba"]},"be":1},"ContextualLayerInlineTabOrder":{"r":["d
+00c0: LK1Z","Qf9LR","wMVm7","z6vKv","9DWD2"],"rds":{"m":["BanzaiODS","
+0100: BanzaiScuba"]},"be":1},"XUIDialogButton.react":{"r":["Qf9LR","Az
+0140: 4yj","fD7jU","z6vKv","9DWD2","NPu7r"],"rds":{"m":["BanzaiODS","B
+0180: anzaiScuba"]},"be":1},"XUIDialogBody.react":{"r":["Qf9LR","AP7eF
+01c0: ","fD7jU","z6vKv","9DWD2","NPu7r"],"rds":{"m":["BanzaiODS","Banz
+0200: aiScuba"]},"be":1},"XUIDialogFooter.react":{"r":["Qf9LR","AP7eF"
+0240: ,"fD7jU","z6vKv","9DWD2","NPu7r"],"rds":{"m":["BanzaiODS","Banza
+0280: iScuba"]},"be":1},"XUIDialogTitle.react":{"r":["Qf9LR","A
+16:25:57.750000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.750000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.750000 <= Recv data, 1491 bytes (0x5d3)
+0000: z4yj","z6vKv","9DWD2","NPu7r"],"rds":{"m":["BanzaiODS","BanzaiSc
+0040: uba"]},"be":1},"XUIGrayText.react":{"r":["Qf9LR","AP7eF","z6vKv"
+0080: ,"9DWD2","NPu7r"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1
+00c0: },"PageTransitions":{"r":["WtwvR","kVibh","E6LdN","Qf9LR","Az4yj
+0100: ","z6vKv","np5Vl","9DWD2","NPu7r"],"rds":{"m":["BanzaiODS","Banz
+0140: aiScuba"]},"be":1},"DialogX":{"r":["Qf9LR","Az4yj","z6vKv","9DWD
+0180: 2"],"rds":{"m":["BanzaiODS","BanzaiScuba"]},"be":1},"React":{"r"
+01c0: :["z6vKv","NPu7r"],"be":1}});});</script>.<script>requireLazy(["
+0200: InitialJSLoader"], function(InitialJSLoader) {InitialJSLoader.lo
+0240: adOnDOMContentReady(["WtwvR","Qf9LR","z6vKv","0Ufki","kVibh","bw
+0280: mjB","Az4yj","wMVm7","eijSA","6il\/R","rVlmW","NPu7r","E6LdN","n
+02c0: p5Vl","P\/mr5"]);});</script>.<script>require("TimeSliceImpl").g
+0300: uard(function() {require("ServerJSDefine").handleDefines([["Asyn
+0340: cRequestConfig",[],{"retryOnNetworkError":"1","useFetchStreamAja
+0380: xPipeTransport":false},328],["FbtLogger",[],{"logger":null},288]
+03c0: ,["FbtResultGK",[],{"shouldReturnFbtResult":true,"inlineMode":"N
+0400: O_INLINE"},876],["IntlPhonologicalRules",[],{"meta":{},"patterns
+0440: ":{}},1496],["IntlViewerContext",[],{"GENDER":3},772],["NumberFo
+0480: rmatConfig",[],{"decimalSeparator":",","numberDelimiter":"\u00a0
+04c0: ","minDigitsForThousandsSeparator":4,"standardDecimalPatternInfo
+0500: ":{"primaryGroupSize":3,"secondaryGroupSize":3},"numberingSystem
+0540: Data":null},54],["SessionNameConfig",[],{"seed":"2oh6"},757],["Z
+0580: eroCategoryHeader",[],{},1127],["KSConfig",[],{"killed":{"__set"
+05c0: :["POCKET_MONSTERS_
+16:25:57.750000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.750000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.750000 <= Recv data, 1203 bytes (0x4b3)
+0000: CREATE","POCKET_MONSTERS_DELETE","VIDEO_DIMENSIONS_FROM_PLAYER_I
+0040: N_UPLOAD_DIALOG","POCKET_MONSTERS_UPDATE_NAME","ADS_PLACEMENT_FI
+0080: X_PUBLISHER_PLATFORMS_MUTATION","MOBILITY_KILL_OLD_VISIBILITY_PO
+00c0: SITION_SETTING","WORKPLACE_DISPLAY_TEXT_EVIDENCE_REPORTING","DYN
+0100: AMIC_ADS_SET_CATALOG_AND_PRODUCT_SET_TOGETHER","BUSINESS_GRAPH_S
+0140: ETTING_APP_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_WABA_
+0180: ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_SETTING_ESG_ASSIGNED_USE
+01c0: RS_NEW_API","BUSINESS_GRAPH_SETTING_PRODUCT_CATALOG_ASSIGNED_USE
+0200: RS_NEW_API","BUSINESS_MANAGER_SHOW_UI_HIDDEN_TASK_FOR_ASSET","BU
+0240: SINESS_GRAPH_SETTING_BU_ASSIGNED_USERS_NEW_API","BUSINESS_GRAPH_
+0280: SETTING_SESG_ASSIGNED_USERS_NEW_API","RECRUITING_REQUISITION_VAL
+02c0: IDATE_COMPANY_GROUPING_ON_LINK"]},"ko":{"__set":["acrJTh9WGdp","
+0300: 1oOE64fL4wO","2dhqRnqXGLQ","7r6mSP7ofr2","1ntjZ2zgf03","3oh5Mw86
+0340: USj","8NAceEy9JZo","5mNEXob0nTj","4j36SVzvP3w","8PlKuowafe8","53
+0380: gCxKq281G","3yzzwBY7Npj","4NbCsulUUI3","4NSq3ZC4ScE","1onzIv0jH6
+03c0: H","5LSlJUj3BnT"]}},2580],["IntlHoldoutGK",[],{"inIntlHoldout":f
+0400: alse},2827],["IntlNumberTypeConfig",[],{"impl":"if (n \u0025 10 
+0440: === 1 && n \u0025 100 !== 11) { return IntlVariations.NUMBER_ONE
+0480: ; } else if (n \u0025 10 >= 2 && n \u0025 10 \u003C
+16:25:57.750000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.750000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.750000 <= Recv data, 1491 bytes (0x5d3)
+0000: = 4 && (n \u0025 100 \u003C 12 || n \u0025 100 > 14)) { return I
+0040: ntlVariations.NUMBER_FEW; } else { return IntlVariations.NUMBER_
+0080: MANY; }"},3405],["LinkshimHandlerConfig",[],{"supports_meta_refe
+00c0: rrer":false,"default_meta_referrer_policy":"default","switched_m
+0100: eta_referrer_policy":"origin","non_linkshim_lnfb_mode":"ie","lin
+0140: k_react_default_hash":"AT2etSCvACoPA5z-UTQ7gX8_3VG3Ra23HIOQCe_M1
+0180: pAduDJIyuz1DLHp5ALCC_MKmV_JZ6L9uN4J4KtncGchCFa0C5mXThhWevSr6dXs9
+01c0: mRchS0IMmrnOqpgroDQ3r8IRz15pkHolVuJrHvO","untrusted_link_default
+0200: _hash":"AT2XN3hwGitpn12cxGTCn0GdgSMoKJU6GSOdek315jphDKSpNwv15T-j
+0240: 15_T91KfncklHO7ZGMcgsnELQh3dxF4akFnPA364UFSLBB8zkdwTKq8tYa9npqJl
+0280: 50tjOyv3fqqyxEBcjKydWyXY","linkshim_host":"l.facebook.com","use_
+02c0: rel_no_opener":false,"always_use_https":false,"onion_always_shim
+0300: ":true,"middle_click_requires_event":false,"www_safe_js_mode":"h
+0340: over","m_safe_js_mode":null,"ghl_param_link_shim":false,"click_i
+0380: ds":[],"is_linkshim_supported":true,"current_domain":"facebook.c
+03c0: om"},27],["FbtQTOverrides",[],{"overrides":{}},551],["cr:1183579
+0400: ",["InlineFbtResultImpl"],{"__rc":["InlineFbtResultImpl","Aa2gAF
+0440: Cr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhX
+0480: ZB04CtR2bk3RusQJA"]},-1]]);require("InitialJSLoader").handleServ
+04c0: erJS({"instances":[["__inst_5b4d0c00_0_0",["Menu","XUIMenuWithSq
+0500: uareCorner","XUIMenuTheme"],[[],{"id":"u_0_0","behaviors":[{"__m
+0540: ":"XUIMenuWithSquareCorner"}],"theme":{"__m":"XUIMenuTheme"}}],2
+0580: ],["__inst_5b4d0c00_0_1",["Menu","MenuItem","__markup_3310c079_0
+05c0: _0","HTML","__marku
+16:25:57.750000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.750000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.750000 <= Recv data, 1500 bytes (0x5dc)
+0000: p_3310c079_0_1","__markup_3310c079_0_2","__markup_3310c079_0_3",
+0040: "XUIMenuWithSquareCorner","XUIMenuTheme"],[[{"value":"key_shortc
+0080: uts","ctor":{"__m":"MenuItem"},"markup":{"__m":"__markup_3310c07
+00c0: 9_0_0"},"label":"\u041f\u043e\u043c\u043e\u0449\u044c \u043f\u04
+0100: 3e \u0433\u043e\u0440\u044f\u0447\u0438\u043c \u043a\u043b\u0430
+0140: \u0432\u0438\u0448\u0430\u043c...","title":"\u041f\u043e\u043c\u
+0180: 043e\u0449\u044c \u043f\u043e \u0433\u043e\u0440\u044f\u0447\u04
+01c0: 38\u043c \u043a\u043b\u0430\u0432\u0438\u0448\u0430\u043c...","c
+0200: lassName":null},{"href":"\/help\/accessibility","target":"_blank
+0240: ","value":"help_center","ctor":{"__m":"MenuItem"},"markup":{"__m
+0280: ":"__markup_3310c079_0_1"},"label":"\u0421\u043f\u0440\u0430\u04
+02c0: 32\u043e\u0447\u043d\u044b\u0439 \u0446\u0435\u043d\u0442\u0440 
+0300: \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u04
+0340: 45 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\
+0380: u0435\u0439","title":"\u0421\u043f\u0440\u0430\u0432\u043e\u0447
+03c0: \u043d\u044b\u0439 \u0446\u0435\u043d\u0442\u0440 \u0441\u043f\u
+0400: 0435\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0432\u043
+0440: e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0439","
+0480: className":null},{"href":"\/help\/contact\/accessibility","targe
+04c0: t":"_blank","value":"submit_feedback","ctor":{"__m":"MenuItem"},
+0500: "markup":{"__m":"__markup_3310c079_0_2"},"label":"\u041e\u0442\u
+0540: 043f\u0440\u0430\u0432\u0438\u0442\u044c \u043e\u0442\u0437\u044
+0580: b\u0432","title":"","className":null},{"href":"\/accessibility",
+05c0: "target":"_blank","value":"f
+16:25:57.765000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.765000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.765000 <= Recv data, 747 bytes (0x2eb)
+0000: acebook_page","ctor":{"__m":"MenuItem"},"markup":{"__m":"__marku
+0040: p_3310c079_0_3"},"label":"\u041d\u043e\u0432\u043e\u0441\u0442\u
+0080: 0438 \u043e \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u04
+00c0: 3d\u044b\u0445 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\
+0100: u0441\u0442\u044f\u0445 \u043d\u0430 Facebook","title":"\u041d\u
+0140: 043e\u0432\u043e\u0441\u0442\u0438 \u043e \u0441\u043f\u0435\u04
+0180: 46\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0432\u043e\u0437\
+01c0: u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044f\u0445 \u043d\u04
+0200: 30 Facebook","className":null}],{"id":"u_0_1","behaviors":[{"__m
+0240: ":"XUIMenuWithSquareCorner"}],"theme":{"__m":"XUIMenuTheme"}}],2
+0280: ],["__inst_e5ad243d_0_0",["PopoverMenu","__inst_1de146dc_0_1","_
+02c0: _elem_ec77afbd_0_1","__inst_5b4d0c00_0_1"],
+16:25:57.765000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.765000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.765000 <= Recv data, 1491 bytes (0x5d3)
+0000: [{"__m":"__inst_1de146dc_0_1"},{"__m":"__elem_ec77afbd_0_1"},{"_
+0040: _m":"__inst_5b4d0c00_0_1"},[]],2],["__inst_e5ad243d_0_1",["Popov
+0080: erMenu","__inst_1de146dc_0_0","__elem_ec77afbd_0_0","__inst_5b4d
+00c0: 0c00_0_0"],[{"__m":"__inst_1de146dc_0_0"},{"__m":"__elem_ec77afb
+0100: d_0_0"},{"__m":"__inst_5b4d0c00_0_0"},[]],2],["__inst_1de146dc_0
+0140: _0",["Popover","__elem_1de146dc_0_0","__elem_ec77afbd_0_0","Cont
+0180: extualLayerAutoFlip","ContextualDialogArrow"],[{"__m":"__elem_1d
+01c0: e146dc_0_0"},{"__m":"__elem_ec77afbd_0_0"},[{"__m":"ContextualLa
+0200: yerAutoFlip"},{"__m":"ContextualDialogArrow"}],{"alignh":"left",
+0240: "position":"below"}],2],["__inst_1de146dc_0_1",["Popover","__ele
+0280: m_1de146dc_0_1","__elem_ec77afbd_0_1","ContextualLayerAutoFlip",
+02c0: "ContextualDialogArrow"],[{"__m":"__elem_1de146dc_0_1"},{"__m":"
+0300: __elem_ec77afbd_0_1"},[{"__m":"ContextualLayerAutoFlip"},{"__m":
+0340: "ContextualDialogArrow"}],{"alignh":"right","position":"below"}]
+0380: ,2]],"markup":[["__markup_3310c079_0_0",{"__html":"\u041f\u043e\
+03c0: u043c\u043e\u0449\u044c \u043f\u043e \u0433\u043e\u0440\u044f\u0
+0400: 447\u0438\u043c \u043a\u043b\u0430\u0432\u0438\u0448\u0430\u043c
+0440: ..."},1],["__markup_3310c079_0_1",{"__html":"\u0421\u043f\u0440\
+0480: u0430\u0432\u043e\u0447\u043d\u044b\u0439 \u0446\u0435\u043d\u04
+04c0: 42\u0440 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\
+0500: u044b\u0445 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u04
+0540: 41\u0442\u0435\u0439"},1],["__markup_3310c079_0_2",{"__html":"\u
+0580: 041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u043e\u044
+05c0: 2\u0437\u044b\u0432
+16:25:57.765000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.765000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.765000 <= Recv data, 1500 bytes (0x5dc)
+0000: "},1],["__markup_3310c079_0_3",{"__html":"\u041d\u043e\u0432\u04
+0040: 3e\u0441\u0442\u0438 \u043e \u0441\u043f\u0435\u0446\u0438\u0430
+0080: \u043b\u044c\u043d\u044b\u0445 \u0432\u043e\u0437\u043c\u043e\u0
+00c0: 436\u043d\u043e\u0441\u0442\u044f\u0445 \u043d\u0430 Facebook"},
+0100: 1]],"elements":[["__elem_072b8e64_0_0","u_0_2",1],["__elem_94c15
+0140: 385_0_0","u_0_3",1],["__elem_a588f507_0_3","u_0_4",1],["__elem_8
+0180: 35c633a_0_0","login_form",1],["__elem_45d73b5d_0_0","loginbutton
+01c0: ",1],["__elem_f46f4946_0_0","u_0_5",1],["__elem_f46f4946_0_1","u
+0200: _0_6",1],["__elem_a588f507_0_1","u_0_7",1],["__elem_3fc3da18_0_0
+0240: ","u_0_8",1],["__elem_51be6cb7_0_0","u_0_9",1],["__elem_1de146dc
+0280: _0_0","u_0_a",1],["__elem_ec77afbd_0_0","u_0_b",2],["__elem_1de1
+02c0: 46dc_0_1","u_0_c",1],["__elem_ec77afbd_0_1","u_0_d",2],["__elem_
+0300: 9f5fac15_0_0","pagelet_bluebar",1],["__elem_45e94dd8_0_0","pagel
+0340: et_bluebar",1],["__elem_a588f507_0_0","globalContainer",2],["__e
+0380: lem_a588f507_0_2","content",1]],"require":[["WebPixelRatioDetect
+03c0: or","startDetecting",[],[false]],["ScriptPath","set",[],["\/4oh4
+0400: .php","8faec450",{"imp_id":"0UUIZKbs0uQ5SLeYo","ef_page":null,"u
+0440: ri":"https:\/\/www.facebook.com\/l"}]],["UITinyViewportAction","
+0480: init",[],[]],["ResetScrollOnUnload","init",["__elem_a588f507_0_0
+04c0: "],[{"__m":"__elem_a588f507_0_0"}]],["AccessibilityWebVirtualCur
+0500: sorClickLogger","init",["__elem_45e94dd8_0_0","__elem_a588f507_0
+0540: _0"],[[{"__m":"__elem_45e94dd8_0_0"},{"__m":"__elem_a588f507_0_0
+0580: "}]]],["KeyboardActivityLogger","init",[],[]],["FocusRing","init
+05c0: ",[],[]],["HardwareCSS","ini
+16:25:57.765000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.765000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.765000 <= Recv data, 1500 bytes (0x5dc)
+0000: t",[],[]],["NavigationAssistantController","init",["__elem_3fc3d
+0040: a18_0_0","__elem_51be6cb7_0_0","__inst_5b4d0c00_0_0","__inst_5b4
+0080: d0c00_0_1","__inst_e5ad243d_0_0","__inst_e5ad243d_0_1"],[{"__m":
+00c0: "__elem_3fc3da18_0_0"},{"__m":"__elem_51be6cb7_0_0"},{"__m":"__i
+0100: nst_5b4d0c00_0_0"},{"__m":"__inst_5b4d0c00_0_1"},null,{"accessib
+0140: ilityPopoverMenu":{"__m":"__inst_e5ad243d_0_0"},"globalPopoverMe
+0180: nu":null,"sectionsPopoverMenu":{"__m":"__inst_e5ad243d_0_1"}}]],
+01c0: ["__inst_e5ad243d_0_1"],["__inst_1de146dc_0_0"],["__inst_e5ad243
+0200: d_0_0"],["__inst_1de146dc_0_1"],["AsyncRequestNectarLogging"],["
+0240: IntlUtils"],["FBLynx","setupDelegation",[],[]],["LoginbarPopover
+0280: ","init",["__elem_94c15385_0_0","__elem_072b8e64_0_0","__elem_a5
+02c0: 88f507_0_3"],[{"__m":"__elem_94c15385_0_0"},{"__m":"__elem_072b8
+0300: e64_0_0"},{"__m":"__elem_a588f507_0_3"}]],["TimezoneAutoset","se
+0340: tInputValue",["__elem_f46f4946_0_0"],[{"__m":"__elem_f46f4946_0_
+0380: 0"},1580901957]],["ScreenDimensionsAutoSet","setInputValue",["__
+03c0: elem_f46f4946_0_1"],[{"__m":"__elem_f46f4946_0_1"}]],["LoginForm
+0400: Controller","init",["__elem_835c633a_0_0","__elem_45d73b5d_0_0"]
+0440: ,[{"__m":"__elem_835c633a_0_0"},{"__m":"__elem_45d73b5d_0_0"},nu
+0480: ll,true,[]]],["BrowserPrefillLogging","initContactpointFieldLogg
+04c0: ing",[],[{"contactpointFieldID":"email","serverPrefill":""}]],["
+0500: BrowserPrefillLogging","initPasswordFieldLogging",[],[{"password
+0540: FieldID":"pass"}]],["Sketch","solveAndUpdateForm",[],["7a27e929f
+0580: 4bead41f0b005c9f01a92ed","0fd7b4f217e25c4ae853bd348ff40d73",5,"l
+05c0: ogin_form"]],["FocusListener
+16:25:57.765000 <= Recv SSL data, 5 bytes (0x5)
+0000: ....\
+16:25:57.765000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.765000 <= Recv data, 331 bytes (0x14b)
+0000: "],["FlipDirectionOnKeypress"],["TimeSliceImpl"],["ServerJSDefin
+0040: e"],["InitialJSLoader"]],"contexts":[[{"__m":"__elem_a588f507_0_
+0080: 1"},true],[{"__m":"__elem_a588f507_0_2"},true],[{"__m":"__elem_9
+00c0: f5fac15_0_0"},false]]});}, "ServerJS define", {"root":true})();.
+0100: .onloadRegister_DEPRECATED(function (){try { $("email").focus();
+0140:  } catch (_
+16:25:57.765000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.765000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.765000 <= Recv data, 870 bytes (0x366)
+0000: ignore) { }});</script>.<script>var bigPipe = new (require("BigP
+0040: ipe"))({"forceFinish":true,"config":{"flush_pagelets_asap":true,
+0080: "dispatch_pagelet_replayable_actions":false}});</script>.<script
+00c0: >bigPipe.beforePageletArrive("first_response")</script>.<script>
+0100: require("TimeSlice").guard((function(){bigPipe.onPageletArrive({
+0140: allResources:["9DWD2","WtwvR","6KFqn","cNDmN","Qf9LR","z6vKv","0
+0180: Ufki","bN9rs","kVibh","bwmjB","Az4yj","wMVm7","1cUgn","eijSA","D
+01c0: 3CA7","6il/R","P/mr5","rVlmW","NPu7r","E6LdN","np5Vl"],displayRe
+0200: sources:["9DWD2","6KFqn","cNDmN","z6vKv","bN9rs","Az4yj","1cUgn"
+0240: ,"D3CA7","P/mr5"],id:"first_response",phase:0,last_in_phase:true
+0280: ,tti_phase:0,all_phases:[63]});}),"onPageletArrive first_respons
+02c0: e",{"root":true,"pagelet":"first_response"})();</script>.<script
+0300: >bigPipe.setPageID("6789922205481767864-0");CavalryLogger.setPag
+0340: eID("6789922205481767864-0");</script>
+16:25:57.765000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.765000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.765000 <= Recv data, 1491 bytes (0x5d3)
+0000: <script>bigPipe.beforePageletArrive("last_response")</script>.<s
+0040: cript>require("TimeSlice").guard((function(){bigPipe.onPageletAr
+0080: rive({resource_map:{FEt5G:{type:"js",src:"https://static.xx.fbcd
+00c0: n.net/rsrc.php/v3/y7/r/svFKQXueTby.js?_nc_x=Ij3Wp8lg5Kz",nc:1}},
+0100: allResources:["9DWD2","WtwvR","6KFqn","cNDmN","Qf9LR","z6vKv","0
+0140: Ufki","bN9rs","kVibh","bwmjB","Az4yj","wMVm7","1cUgn","eijSA","D
+0180: 3CA7","6il/R","P/mr5","rVlmW","NPu7r","E6LdN","np5Vl","zTywF","F
+01c0: Et5G"],displayResources:["9DWD2","6KFqn","cNDmN","z6vKv","bN9rs"
+0200: ,"Az4yj","1cUgn","D3CA7","P/mr5"],onafterload:["CavalryLogger.ge
+0240: tInstance(\"6789922205481767864-0\").collectBrowserTiming(window
+0280: )","window.CavalryLogger&&CavalryLogger.getInstance().setTimeSta
+02c0: mp(\"t_paint\");","if (window.ExitTime){CavalryLogger.getInstanc
+0300: e(\"6789922205481767864-0\").setValue(\"t_exit\", window.ExitTim
+0340: e);};"],id:"last_response",phase:63,jsmods:{require:[["CavalryLo
+0380: ggerImpl","startInstrumentation",[],[]],["NavigationMetrics","se
+03c0: tPage",[],[{page:"/4oh4.php",page_type:"normal",page_uri:"https:
+0400: //www.facebook.com/l",serverLID:"6789922205481767864-0"}]],["Dim
+0440: ensionTracking"],["HighContrastMode","init",[],[{isHCM:false,spa
+0480: cerImage:"https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-dei
+04c0: jE.gif"}]],["ClickRefLogger"],["DetectBrokenProxyCache","run",[]
+0500: ,[0,"c_user"]],["TimeSliceImpl","setLogging",[],[false,0.01]],["
+0540: NavigationClickPointHandler"],["WebStorageMonster","schedule",[]
+0580: ,[true]],["Artillery","disable",[],[]],["ArtilleryOnUntilOffLogg
+05c0: ing","disable",[],[
+16:25:57.781000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.781000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.781000 <= Recv data, 1500 bytes (0x5dc)
+0000: ]],["ArtilleryRequestDataCollection","disable",[],["678992220548
+0040: 1767864-0"]],["ScriptPathLogger","startLogging",[],[]],["TimeSpe
+0080: ntBitArrayLogger","init",[],[]],["ArtilleryRequestDataCollection
+00c0: ","init",[],[]],["CookieCore","setWithoutChecksIfFirstPartyConte
+0100: xt",[],["_js_datr","RaY6XiFoYMEY9omSTtSe1mJ9",63072000000,"/",tr
+0140: ue]]],define:[["cr:838016",["React-prod"],{__rc:["React-prod","A
+0180: a06NfGVl8oAK_ATd7iXtR-TqTlMP_SBHTawikh1vPwxuY-7_8ydEDMEw-rJDejwj
+01c0: nTCgd_O_8TWpg"]},-1],["cr:891836",["ReactDOMProdOrProfiling-fb"]
+0200: ,{__rc:["ReactDOMProdOrProfiling-fb","Aa06NfGVl8oAK_ATd7iXtR-TqT
+0240: lMP_SBHTawikh1vPwxuY-7_8ydEDMEw-rJDejwjnTCgd_O_8TWpg"]},-1],["cr
+0280: :917439",["PageTransitionsBlue"],{__rc:["PageTransitionsBlue","A
+02c0: a2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hy
+0300: x7yhXZB04CtR2bk3RusQJA"]},-1],["cr:1108857",[],{__rc:[null,"Aa06
+0340: NfGVl8oAK_ATd7iXtR-TqTlMP_SBHTawikh1vPwxuY-7_8ydEDMEw-rJDejwjnTC
+0380: gd_O_8TWpg"]},-1],["cr:1269707",[],{__rc:[null,"Aa34YJaxLfXELJgv
+03c0: F5NjFBRGtWjUGbaxwZVMiI49_zE5Cl9gfs1BnIT1hOO0xsZl7nkJu7p52vuho43D
+0400: 0LU"]},-1],["cr:1269708",[],{__rc:[null,"Aa34YJaxLfXELJgvF5NjFBR
+0440: GtWjUGbaxwZVMiI49_zE5Cl9gfs1BnIT1hOO0xsZl7nkJu7p52vuho43D0LU"]},
+0480: -1],["cr:1269709",[],{__rc:[null,"Aa34YJaxLfXELJgvF5NjFBRGtWjUGb
+04c0: axwZVMiI49_zE5Cl9gfs1BnIT1hOO0xsZl7nkJu7p52vuho43D0LU"]},-1],["c
+0500: r:1069930",[],{__rc:[null,"Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlle
+0540: BMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:1
+0580: 083116",["XAsyncRequest"],{__rc:["XAsyncRequest","Aa2gAFCr0hAl7f
+05c0: 4EU3h79f-tb9eVjCBAdWlleBMfPF
+16:25:57.781000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.781000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.781000 <= Recv data, 1500 bytes (0x5dc)
+0000: IMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:108311
+0040: 7",[],{__rc:[null,"Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMk
+0080: BZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:1109759",
+00c0: ["CookieConsentBlacklist"],{__rc:["CookieConsentBlacklist","Aa2g
+0100: AFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7y
+0140: hXZB04CtR2bk3RusQJA"]},-1],["cr:902965",["SketchBlue"],{__rc:["S
+0180: ketchBlue","Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe
+01c0: -CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:888908",["warnin
+0200: gBlue"],{__rc:["warningBlue","Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdW
+0240: lleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["c
+0280: r:971473",["LayerHideOnTransition"],{__rc:["LayerHideOnTransitio
+02c0: n","Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaS
+0300: g36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["cr:1105154",[],{__rc:[null,
+0340: "Aa06NfGVl8oAK_ATd7iXtR-TqTlMP_SBHTawikh1vPwxuY-7_8ydEDMEw-rJDej
+0380: wjnTCgd_O_8TWpg"]},-1],["PageTransitionsConfig",[],{reloadOnBoot
+03c0: loadError:true},1067],["CoreWarningGK",[],{forceWarning:false},7
+0400: 25],["cr:682514",["ReactDOM-prod"],{__rc:["ReactDOM-prod","Aa31y
+0440: cyFDclb0xrArPLHQOn9Ls0kDpf9tqOHQ1OItR3Ql3nu9EXgDFrqpxNBu-39yWPCJ
+0480: Yo_1FsH406anx3ZrKmdMzViyw"]},-1],["cr:983844",[],{__rc:[null,"Aa
+04c0: 06NfGVl8oAK_ATd7iXtR-TqTlMP_SBHTawikh1vPwxuY-7_8ydEDMEw-rJDejwjn
+0500: TCgd_O_8TWpg"]},-1],["cr:895839",["ReactFiberErrorDialogImpl"],{
+0540: __rc:["ReactFiberErrorDialogImpl","Aa2gAFCr0hAl7f4EU3h79f-tb9eVj
+0580: CBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhXZB04CtR2bk3RusQJA"]},-1
+05c0: ],["cr:895840",[],{__rc:[nul
+16:25:57.781000 <= Recv SSL data, 5 bytes (0x5)
+0000: .... 
+16:25:57.781000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.781000 <= Recv data, 15 bytes (0xf)
+0000: l,"Aa00H5tWh3rd
+16:25:57.781000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.781000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.781000 <= Recv data, 1491 bytes (0x5d3)
+0000: jPzzuiS37RZTG-lBqQZfTDw53y-ViHoP7KHE5nMjAUFJaFn3EEwR3_6eI26Yu-m5
+0040: csZ75NfOcUCqopc"]},-1],["KillabyteProfilerConfig",[],{htmlProfil
+0080: erModule:null,profilerModule:null,depTypes:{BL:"bl",NON_BL:"non-
+00c0: bl"}},1145],["QuicklingConfig",[],{version:"1001677202;0;",sessi
+0100: onLength:10,inactivePageRegex:"^/(fr/u\\.php|ads/|advertising|ac
+0140: \\.php|ae\\.php|a\\.php|ajax/emu/(end|f|h)\\.php|badges/|comment
+0180: s\\.php|connect/uiserver\\.php|editalbum\\.php.+add=1|ext/|feeds
+01c0: /|help([/?]|$)|identity_switch\\.php|isconnectivityahumanright/|
+0200: intern/|login\\.php|logout\\.php|sitetour/homepage_tour\\.php|so
+0240: rry\\.php|syndication\\.php|webmessenger|/plugins/subscribe|look
+0280: back|brandpermissions|gameday|pxlcld|comet|worldcup/map|livemap|
+02c0: work/reseller|([^/]+/)?dialog|legal|.+\\.pdf$|.+/settings/)",bad
+0300: RequestKeys:["nonce","access_token","oauth_token","xs","checkpoi
+0340: nt_data","code"],logRefreshOverhead:false},60],["TrackingConfig"
+0380: ,[],{domain:"https://pixel.facebook.com"},325],["WebStorageMonst
+03c0: erLoggingURI",[],{uri:"/ajax/webstorage/process_keys/?state=1"},
+0400: 3032],["BrowserPaymentHandlerConfig",[],{enabled:false},3904],["
+0440: TimeSpentConfig",[],{"0_delay":0,"0_timeout":8,delay:1000,timeou
+0480: t:64},142],["cr:844180",["TimeSpentImmediateActiveSecondsLoggerB
+04c0: lue"],{__rc:["TimeSpentImmediateActiveSecondsLoggerBlue","Aa2gAF
+0500: Cr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfPFIMkBZm5vGe-CopjvaSg36Hyx7yhX
+0540: ZB04CtR2bk3RusQJA"]},-1],["cr:1187159",["BlueCompatBroker"],{__r
+0580: c:["BlueCompatBroker","Aa2gAFCr0hAl7f4EU3h79f-tb9eVjCBAdWlleBMfP
+05c0: FIMkBZm5vGe-CopjvaS
+16:25:57.781000 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+16:25:57.781000 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+16:25:57.781000 <= Recv data, 230 bytes (0xe6)
+0000: g36Hyx7yhXZB04CtR2bk3RusQJA"]},-1],["ImmediateActiveSecondsConfi
+0040: g",[],{sampling_rate:0},423]]},last_in_phase:true,the_end:true})
+0080: ;}),"onPageletArrive last_response",{"root":true,"pagelet":"last
+00c0: _response"})();</script></body></html>
+16:25:57.796000 == Info: Connection #1 to host www.facebook.com left intact

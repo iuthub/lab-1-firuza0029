@@ -1,0 +1,20 @@
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "firstname": "Firuza", 
+    "lastname": "Suleymanova"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Content-Length": "37", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/7.68.0", 
+    "X-Amzn-Trace-Id": "Root=1-5e3d4290-6c8e9eb452d7bc3cae13a608"
+  }, 
+  "json": null, 
+  "origin": "87.237.236.162", 
+  "url": "https://httpbin.org/post"
+}
